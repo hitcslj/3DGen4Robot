@@ -2,14 +2,14 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://3dgen4robot.github.io)
-[![arXiv](https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b.svg)]()
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=3dgen4robot.awesome-3d-gen-for-embodied-ai)](https://github.com/3dgen4robot/awesome-3d-gen-for-embodied-ai)
+[![arXiv](https://img.shields.io/badge/arXiv-2604.26509-b31b1b.svg)](https://arxiv.org/abs/2604.26509)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=3dgen4robot.awesome-3d-gen-for-embodied-ai)](https://github.com/hitcslj/3DGen4Robot)
 
 A curated list of papers, datasets, benchmarks, simulators, and evaluation resources for 3D generation in embodied AI and robotic simulation.
 
 This repository accompanies our survey on **3D generation for embodied AI and robotic simulation**. It organizes the literature around how generative 3D methods support embodied systems, from simulation-ready asset creation, to interactive scene generation, to sim-to-real transfer. In addition to research papers, we collect resources that are useful for building and evaluating embodied 3D generation systems, including datasets, benchmarks, simulator platforms, and asset formats.
 
-Contributions are welcome. Please open an [issue](https://github.com/3dgen4robot/awesome-3d-gen-for-embodied-ai/issues) or submit a [pull request](https://github.com/3dgen4robot/awesome-3d-gen-for-embodied-ai/pulls) if you would like to add a paper, dataset, benchmark, simulator, or evaluation resource.
+Contributions are welcome. Please open an [issue](https://github.com/hitcslj/3DGen4Robot/issues) or submit a [pull request](https://github.com/hitcslj/3DGen4Robot/pulls) if you would like to add a paper, dataset, benchmark, simulator, or evaluation resource.
 
 ## Highlights
 
@@ -322,15 +322,34 @@ We recommend evaluating embodied 3D generation at three levels:
 - **Physical Plausibility and Simulation Compatibility**: stability, articulation correctness, collision validity, material realism, and simulator readiness
 - **Downstream Embodied Task Performance**: grasp success, articulated manipulation success, navigation success, task completion, and sim-to-real transfer performance
 
+## Contributing
+
+We welcome contributions of new papers, datasets, benchmarks, simulators, and evaluation resources. You can either:
+
+- open an [issue](https://github.com/hitcslj/3DGen4Robot/issues) with the paper title, link, venue, and the category it belongs to, or
+- submit a [pull request](https://github.com/hitcslj/3DGen4Robot/pulls) that edits this README directly.
+
+When submitting a pull request, please:
+
+1. Add the entry to the most relevant subsection (e.g., *Articulated Object Generation*, *Agentic and Task-Oriented Scene Generation*, *Digital Twin Construction*).
+2. Keep each table in chronological order, from the earliest to the latest.
+3. Follow the existing row format, using `-` for missing links:
+
+```markdown
+| `ModelName` | [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX) <br> Full Paper Title | Venue 'YY | [![Project](https://img.shields.io/badge/Project-Page-blue)](https://project.page) | [![GitHub Stars](https://img.shields.io/github/stars/owner/repo)](https://github.com/owner/repo) |
+```
+
+4. Check that all links work before submitting.
+
 ## Citation
 
 If you find this repository useful, please consider citing our survey.
 
 ```bibtex
-@article{to_be_updated,
+@article{ye20263dgeneration,
   title   = {3D Generation for Embodied AI and Robotic Simulation: A Survey},
-  author  = {To be updated},
-  journal = {To be updated},
-  year    = {2025}
+  author  = {Ye, Tianwei and Liao, Minwen and Liu, Jian and Guo, Chunchao and Du, Dazhao and Shou, Quanxin and Zhu, Fangqi and Guo, Song},
+  journal = {arXiv preprint arXiv:2604.26509},
+  year    = {2026}
 }
 ```
