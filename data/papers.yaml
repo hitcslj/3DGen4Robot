@@ -1,0 +1,1886 @@
+# Paper database for "3D Generation for Embodied AI and Robotic Simulation: A Survey".
+#
+# This file is the single source of truth for the tables in README.md and for the
+# Collections / Datasets sections of https://3dgen4robot.github.io.
+# After editing it, regenerate the README with:   python scripts/build_readme.py
+# (the homepage repo builds its data from this file with scripts/build_all.py).
+#
+# taxonomy   - sections in display order. `key` is what entries use in `section`;
+#              `homepage_category` is the tab name on the project page.
+# methods    - one entry per paper:
+#     name       short name shown in the first column (required)
+#     title      full paper title (required)
+#     arxiv      arXiv id, e.g. "2412.01506" (omit if the paper is not on arXiv)
+#     paper_url  link to the paper when there is no arXiv id
+#     date       "YYYY-MM"; only needed without an arXiv id (tables are sorted by first release)
+#     venue      e.g. "CVPR '26", or "arXiv '26" if not yet published (required)
+#     section    a taxonomy key (required)
+#     project    project page URL
+#     code       code URL (a GitHub URL gets a stars badge)
+#     authors    BibTeX-style author list, shown on the project page
+#     cite_key   key of the entry in the survey's ref.bib, if the paper is cited there
+#     in_paper   true if the paper appears in the survey (arXiv 2604.26509)
+# datasets   - same fields, plus `details` (README column) and `website`, and a
+#              `homepage` block with the attributes shown on the project page
+#              (category, type, scale, summary, phys, kin, sim, robot; `url` if the page
+#              should link somewhere other than `website`).
+# platforms  - simulation platforms table in the README.
+
+taxonomy:
+- key: articulated
+  group: Data Generator
+  section: Articulated Object Generation
+  homepage_category: Articulated Objects
+- key: physical
+  group: Data Generator
+  section: Physically-Grounded Object Generation
+  homepage_category: Physically-grounded Objects
+- key: deformable
+  group: Data Generator
+  section: Deformable Object Generation
+  homepage_category: Deformable Objects
+- key: pipelines
+  group: Data Generator
+  section: End-to-End Sim-Ready Asset Pipelines
+  homepage_category: End-to-End Pipelines
+- key: structure_scene
+  group: Simulation Environments
+  section: Structure-Driven Scene Generation
+  homepage_category: Structure-Driven
+- key: controllable_scene
+  group: Simulation Environments
+  section: Controllable Scene Generation
+  homepage_category: Controllable
+- key: agentic_scene
+  group: Simulation Environments
+  section: Agentic and Task-Oriented Scene Generation
+  homepage_category: Agentic
+- key: digital_twin
+  group: Sim2Real Bridge
+  section: Digital Twin Construction
+  homepage_category: Digital Twin
+- key: augmentation
+  group: Sim2Real Bridge
+  section: Data Augmentation
+  homepage_category: Data Augmentation
+- key: demo_generation
+  group: Sim2Real Bridge
+  section: Synthetic Demonstration and Task Generation
+  homepage_category: Task & Demo Generation
+- key: object_datasets
+  group: Datasets and Benchmarks
+  section: Object-Level Datasets
+  homepage_category: Object Assets
+- key: scene_datasets
+  group: Datasets and Benchmarks
+  section: Scene-Level Datasets
+  homepage_category: Scene Datasets
+- key: demo_datasets
+  group: Datasets and Benchmarks
+  section: Robot Demonstration Datasets
+  homepage_category: Robot Demonstrations
+- key: benchmarks
+  group: Datasets and Benchmarks
+  section: Embodied Benchmarks
+  homepage_category: Robot Demonstrations
+methods:
+- name: NAP
+  title: 'NAP: Neural 3D Articulated Object Prior'
+  arxiv: '2305.16315'
+  venue: NeurIPS '23
+  section: articulated
+  project: https://www.cis.upenn.edu/~leijh/projects/nap
+  authors: Lei, Jiahui and Deng, Congyue and Shen, William B and Guibas, Leonidas J and Daniilidis, Kostas
+  cite_key: lei2023nap
+  in_paper: true
+- name: CAGE
+  title: 'CAGE: Controllable Articulation Generation'
+  arxiv: '2312.09570'
+  venue: CVPR '24
+  section: articulated
+  project: https://3dlg-hcvc.github.io/cage
+  code: https://github.com/3dlg-hcvc/cage
+  authors: Liu, Jiayi and Tam, Hou In Ivan and Mahdavi-Amiri, Ali and Savva, Manolis
+  cite_key: liu2024cage
+  in_paper: true
+- name: URDFormer
+  title: 'URDFormer: A Pipeline for Constructing Articulated Simulation Environments from Real-World Images'
+  arxiv: '2405.11656'
+  venue: RSS '24
+  section: articulated
+  project: https://urdformer.github.io
+  code: https://github.com/WEIRDLabUW/urdformer
+  authors: Chen, Zoey and Walsman, Aaron and Memmel, Marius and Mo, Kaichun and Fang, Alex and Vemuri, Karthikeya and Wu, Alan and Fox, Dieter and Gupta, Abhishek
+  cite_key: chen2024urdformer
+  in_paper: true
+- name: SINGAPO
+  title: 'SINGAPO: Single Image Controlled Generation of Articulated Parts in Objects'
+  arxiv: '2410.16499'
+  venue: ICLR '25
+  section: articulated
+  project: https://3dlg-hcvc.github.io/singapo
+  code: https://github.com/3dlg-hcvc/singapo
+  authors: Liu, Jiayi and Iliash, Denys and Chang, Angel X and Savva, Manolis and Mahdavi-Amiri, Ali
+  cite_key: liu2024singapo
+  in_paper: true
+- name: Real2Code
+  title: 'Real2Code: Reconstruct Articulated Objects via Code Generation'
+  arxiv: '2406.08474'
+  venue: ICLR '25
+  section: articulated
+  authors: Mandi, Zhao and Weng, Yijia and Bauer, Dominik and Song, Shuran
+  cite_key: mandi2024real2code
+  in_paper: true
+- name: Articulate-Anything
+  title: 'Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model'
+  arxiv: '2410.13882'
+  venue: ICLR '25
+  section: articulated
+  project: https://articulate-anything.github.io
+  code: https://github.com/vlongle/articulate-anything
+  authors: Le, Long and Xie, Jason and Liang, William and Wang, Hung-Ju and Yang, Yue and Ma, Yecheng Jason and Vedder, Kyle and Krishna, Arjun and Jayaraman, Dinesh and Eaton, Eric
+  cite_key: le2024articulate
+  in_paper: true
+- name: MagicArticulate
+  title: 'MagicArticulate: Make Your 3D Models Articulation-Ready'
+  arxiv: '2502.12135'
+  venue: CVPR '25
+  section: articulated
+  project: https://chaoyuesong.github.io/MagicArticulate
+  code: https://github.com/Seed3D/MagicArticulate
+  authors: Song, Chaoyue and Zhang, Jianfeng and Li, Xiu and Yang, Fan and Chen, Yiwen and Xu, Zhongcong and Liew, Jun Hao and Guo, Xiaoyang and Liu, Fayao and Feng, Jiashi and others
+  cite_key: song2025magicarticulate
+  in_paper: true
+- name: MeshArt
+  title: 'MeshArt: Generating Articulated Meshes with Structure-Guided Transformers'
+  arxiv: '2412.11596'
+  venue: CVPR '25
+  section: articulated
+  project: https://daoyig.github.io/Mesh_Art
+  code: https://github.com/DaoyiG/MeshArt
+  authors: Gao, Daoyi and Siddiqui, Yawar and Li, Lei and Dai, Angela
+  cite_key: gao2025meshart
+  in_paper: true
+- name: PartRM
+  title: 'PartRM: Modeling Part-Level Dynamics with Large Cross-State Reconstruction Model'
+  arxiv: '2503.19913'
+  venue: CVPR '25
+  section: articulated
+  project: https://partrm.c7w.tech
+  authors: Gao, Mingju and Pan, Yike and Gao, Huan-ang and Zhang, Zongzheng and Li, Wenyi and Dong, Hao and Tang, Hao and Yi, Li and Zhao, Hao
+  cite_key: gao2025partrm
+  in_paper: true
+- name: ArtFormer
+  title: 'ArtFormer: Controllable Generation of Diverse 3D Articulated Objects'
+  arxiv: '2412.07237'
+  venue: CVPR '25
+  section: articulated
+  authors: Su, Jiayi and Feng, Youhe and Li, Zheng and Song, Jinhua and He, Yangfan and Ren, Botao and Xu, Botian
+  cite_key: su2025artformer
+  in_paper: true
+- name: ArtiWorld
+  title: 'ArtiWorld: LLM-Driven Articulation of 3D Objects in Scenes'
+  arxiv: '2511.12977'
+  venue: arXiv '25
+  section: articulated
+  authors: Yang, Yixuan and Xie, Luyang and Luo, Zhen and Zhao, Zixiang and Ding, Tongsheng and Gao, Mingqi and Zheng, Feng
+  cite_key: yang2025artiworld
+  in_paper: true
+- name: Articulate AnyMesh
+  title: 'Articulate AnyMesh: Open-Vocabulary 3D Articulated Objects Modeling'
+  arxiv: '2502.02590'
+  venue: CoRL '25
+  section: articulated
+  project: https://articulate-anymesh.github.io
+  authors: Qiu, Xiaowen and Yang, Jincheng and Wang, Yian and Chen, Zhehuan and Wang, Yufei and Wang, Tsun-Hsuan and Xian, Zhou and Gan, Chuang
+  cite_key: qiu2025articulate
+  in_paper: true
+- name: ATOP
+  title: 'Articulate That Object Part (ATOP): 3D Part Articulation via Text and Motion Personalization'
+  arxiv: '2502.07278'
+  venue: TOG '26
+  section: articulated
+  authors: Vora, Aditya and Nag, Sauradip and Wang, Kai and Zhang, Hao
+  cite_key: vora2025articulate
+  in_paper: true
+- name: URDF-Anything
+  title: 'URDF-Anything: Constructing Articulated Objects with 3D Multimodal Language Model'
+  arxiv: '2511.00940'
+  venue: NeurIPS '25
+  section: articulated
+  project: https://lzvsdy.github.io/URDF-Anything
+  code: https://github.com/LZVSDY/URDF-Anything_CODE
+  authors: Li, Zhe and Bai, Xiang and Zhang, Jieyu and Wu, Zhuangzhe and Xu, Che and Li, Ying and Hou, Chengkai and Zhang, Shanghang
+  cite_key: li2025urdf
+  in_paper: true
+- name: ArtiLatent
+  title: 'ArtiLatent: Realistic Articulated 3D Object Generation via Structured Latents'
+  arxiv: '2510.21432'
+  venue: SIG. Asia '25
+  section: articulated
+  project: https://chenhonghua.github.io/MyProjects/ArtiLatent
+  code: https://github.com/chenhonghua/ArtiLatent
+  authors: Chen, Honghua and Lan, Yushi and Chen, Yongwei and Pan, Xingang
+  cite_key: chen2025artilatent
+  in_paper: true
+- name: ArtGen
+  title: 'ArtGen: Conditional Generative Modeling of Articulated Objects in Arbitrary Part-Level States'
+  arxiv: '2512.12395'
+  venue: arXiv '25
+  section: articulated
+  authors: Wang, Haowen and Yuan, Xiaoping and Zhang, Fugang and Jian, Rui and Zhu, Yuanwei and Qiao, Xiuquan and Huang, Yakun
+  cite_key: wang2025artgen
+  in_paper: true
+- name: DreamArt
+  title: 'DreamArt: Generating Interactable Articulated Objects from a Single Image'
+  arxiv: '2507.05763'
+  venue: arXiv '25
+  section: articulated
+  project: https://dream-art-0.github.io/DreamArt
+  authors: Lu, Ruijie and Liu, Yu and Tang, Jiaxiang and Ni, Junfeng and Wang, Yuxiang and Wan, Diwen and Zeng, Gang and Chen, Yixin and Huang, Siyuan
+  cite_key: lu2025dreamart
+  in_paper: true
+- name: GAOT
+  title: 'GAOT: Generating Articulated Objects Through Text-Guided Diffusion Models'
+  arxiv: '2512.03566'
+  venue: ACM MM Asia '25
+  section: articulated
+  authors: Sun, Hao and Fan, Lei and Di, Donglin and Liu, Shaohui
+  cite_key: sun2025gaot
+  in_paper: true
+- name: UniArt
+  title: 'UniArt: Unified 3D Representation for Generating 3D Articulated Objects with Open-Set Articulation'
+  arxiv: '2511.21887'
+  venue: arXiv '25
+  section: articulated
+  authors: Jin, Bu and Li, Weize and Gu, Songen and Zheng, Yupeng and Zheng, Yuhang and Zhou, Zhengyi and Yao, Yao
+  cite_key: jin2025uniart
+  in_paper: true
+- name: Infinite Mobility
+  title: 'Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated Objects via Procedural Generation'
+  arxiv: '2503.13424'
+  venue: arXiv '25
+  section: articulated
+  project: https://infinite-mobility.github.io
+  code: https://github.com/Intern-Nexus/Infinite-Mobility
+  authors: Lian, Xinyu and Yu, Zichao and Liang, Ruiming and Wang, Yitong and Luo, Li Ray and Chen, Kaixu and Zhou, Yuanzhen and Tang, Qihong and Xu, Xudong and Lyu, Zhaoyang and others
+  cite_key: lian2025infinite
+  in_paper: true
+- name: Kinematify
+  title: 'Kinematify: Open-Vocabulary Synthesis of High-DoF Articulated Objects'
+  arxiv: '2511.01294'
+  venue: ICRA '26
+  section: articulated
+  project: https://sites.google.com/deemos.com/kinematify
+  authors: Wang, Jiawei and Wang, Dingyou and Hu, Jiaming and Zhang, Qixuan and Yu, Jingyi and Xu, Lan
+  cite_key: wang2025kinematify
+  in_paper: true
+- name: Particulate
+  title: 'Particulate: Feed-Forward 3D Object Articulation'
+  arxiv: '2512.11798'
+  venue: CVPR '26
+  section: articulated
+  project: https://ruiningli.com/particulate
+  authors: Li, Ruining and Yao, Yuxin and Zheng, Chuanxia and Rupprecht, Christian and Lasenby, Joan and Wu, Shangzhe and Vedaldi, Andrea
+  cite_key: li2025particulate
+  in_paper: true
+- name: URDF-Anything+
+  title: 'URDF-Anything+: End-to-End Generation for Simulation-Ready Articulated Assets'
+  arxiv: '2603.14010'
+  venue: NeurIPS '26
+  section: articulated
+  project: https://urdf-anything-plus.github.io
+  code: https://github.com/URDF-Anything-plus/Code
+  authors: Wu, Zhuangzhe and Xin, Yue and Hou, Chengkai and Chen, Minghao and Lyu, Yaoxu and Zhang, Jieyu and Zhang, Shanghang
+  cite_key: wu2026urdf
+  in_paper: true
+- name: ArtLLM
+  title: 'ArtLLM: Generating Articulated Assets via 3D LLM'
+  arxiv: '2603.01142'
+  venue: CVPR '26
+  section: articulated
+  project: https://authoritywang.github.io/artllm
+  authors: Wang, Penghao and Xie, Siyuan and Yan, Hongyu and Yang, Xianghui and Huang, Jingwei and Guo, Chunchao and Gu, Jiayuan
+  cite_key: wang2026artllm
+  in_paper: true
+- name: SPARK
+  title: 'SPARK: Sim-Ready Part-Level Articulated Reconstruction with VLM Knowledge'
+  arxiv: '2512.01629'
+  venue: CVPR '26
+  section: articulated
+  project: https://heyumeng.com/SPARK/index.html
+  authors: He, Yumeng and Jiang, Ying and Lu, Jiayin and Yang, Yin and Jiang, Chenfanfu
+  cite_key: he2025spark
+  in_paper: true
+- name: PAct
+  title: 'PAct: Part-Decomposed Single-View Articulated Object Generation'
+  arxiv: '2602.14965'
+  venue: arXiv '26
+  section: articulated
+  project: https://pact-project.github.io
+  authors: Liu, Qingming and Yao, Xinyue and Zhang, Shuyuan and Deng, Yueci and Liu, Guiliang and Liu, Zhen and Jia, Kui
+  cite_key: liu2026pact
+  in_paper: true
+- name: NeRF2Physics
+  title: Physical Property Understanding from Language-Embedded Feature Fields
+  arxiv: '2404.04242'
+  venue: CVPR '24
+  section: physical
+  project: https://ajzhai.github.io/NeRF2Physics
+  code: https://github.com/ajzhai/NeRF2Physics
+  authors: Zhai, Albert J and Shen, Yuan and Chen, Emily Y and Wang, Gloria X and Wang, Xinlei and Wang, Sheng and Guan, Kaiyu and Wang, Shenlong
+  cite_key: zhai2024physical
+  in_paper: true
+- name: Atlas3D
+  title: 'Atlas3D: Physically Constrained Self-Supporting Text-To-3D for Simulation and Fabrication'
+  arxiv: '2405.18515'
+  venue: NeurIPS '24
+  section: physical
+  project: https://yunuoch.github.io/Atlas3D
+  code: https://github.com/yunuoch/Atlas3D
+  authors: Chen, Yunuo and Xie, Tianyi and Zong, Zeshun and Li, Xuan and Gao, Feng and Yang, Yin and Wu, Ying Nian and Jiang, Chenfanfu
+  cite_key: chen2024atlas3d
+  in_paper: true
+- name: Physically Compatible 3D
+  title: Physically Compatible 3D Object Modeling from a Single Image
+  arxiv: '2405.20510'
+  venue: NeurIPS '24
+  section: physical
+  authors: Guo, Minghao and Wang, Bohan and Ma, Pingchuan and Zhang, Tianyuan and Owens, Crystal E and Gan, Chuang and Tenenbaum, Joshua B and He, Kaiming and Matusik, Wojciech
+  cite_key: guo2024physically
+  in_paper: true
+- name: PhyCAGE
+  title: 'PhyCAGE: Physically Plausible Compositional 3D Asset Generation from a Single Image'
+  arxiv: '2411.18548'
+  venue: NeurIPS '24
+  section: physical
+  project: https://wolfball.github.io/phycage
+  code: https://github.com/Tencent/Tencent-XR-3DGen/tree/main/character/phy_cage
+  authors: Yan, Han and Zhang, Mingrui and Li, Yang and Ma, Chao and Ji, Pan
+  cite_key: yan2024phycage
+  in_paper: true
+- name: PhysGaussian
+  title: 'PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics'
+  arxiv: '2311.12198'
+  venue: CVPR '24
+  section: physical
+  project: https://xpandora.github.io/PhysGaussian
+  authors: Xie, Tianyi and Zong, Zeshun and Qiu, Yuxing and Li, Xuan and Feng, Yutao and Yang, Yin and Jiang, Chenfanfu
+  cite_key: xie2024physgaussian
+  in_paper: true
+- name: PhysPart
+  title: 'PhysPart: Physically Plausible Part Completion for Interactable Objects'
+  arxiv: '2408.13724'
+  venue: ICRA '25
+  section: physical
+  project: https://red-fairy.github.io/physpart-webpage
+  authors: Luo, Rundong and Geng, Haoran and Deng, Congyue and Li, Puhao and Wang, Zan and Jia, Baoxiong and Guibas, Leonidas and Huang, Siyuan
+  cite_key: luo2025physpart
+  in_paper: true
+- name: DSO
+  title: 'DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness'
+  arxiv: '2503.22677'
+  venue: ICCV '25
+  section: physical
+  project: https://ruiningli.com/dso
+  authors: Li, Ruining and Zheng, Chuanxia and Rupprecht, Christian and Vedaldi, Andrea
+  cite_key: li2025dso
+  in_paper: true
+- name: GaussianProperty
+  title: 'GaussianProperty: Integrating Physical Properties to 3D Gaussians with LMMs'
+  arxiv: '2412.11258'
+  venue: ICCV '25
+  section: physical
+  project: https://Gaussian-Property.github.io
+  authors: Xu, Xinli and Ge, Wenhang and Qiu, Dicong and Chen, ZhiFei and Yan, Dongyu and Liu, Zhuoyun and Zhao, Haoyu and Zhao, Hanfeng and Zhang, Shunsi and Liang, Junwei and others
+  cite_key: xu2025gaussianproperty
+  in_paper: true
+- name: PhysX-3D
+  title: 'PhysX-3D: Physical-Grounded 3D Asset Generation'
+  arxiv: '2507.12465'
+  venue: NeurIPS '25
+  section: physical
+  project: https://physx-3d.github.io
+  code: https://github.com/ziangcao0312/PhysX-3D
+  authors: Cao, Ziang and Chen, Zhaoxi and Pan, Liang and Liu, Ziwei
+  cite_key: cao2025physx3d
+  in_paper: true
+- name: SOPHY
+  title: 'SOPHY: Learning to Generate Simulation-Ready Objects with Physical Materials'
+  arxiv: '2504.12684'
+  venue: WACV '26
+  section: physical
+  project: https://xjay18.github.io/SOPHY_page
+  code: https://github.com/microsoft/TRELLIS
+  authors: Cao, Junyi and Kalogerakis, Evangelos
+  cite_key: cao2025sophy
+  in_paper: true
+- name: Pixie
+  title: 'Pixie: Fast and Generalizable Supervised Learning of 3D Physics from Pixels'
+  arxiv: '2508.17437'
+  venue: arXiv '25
+  section: physical
+  project: https://pixie-3d.github.io
+  code: https://github.com/vlongle/pixie
+  authors: Le, Long and Lucas, Ryan and Wang, Chen and Chen, Chuhao and Jayaraman, Dinesh and Eaton, Eric and Liu, Lingjie
+  cite_key: le2025pixie
+  in_paper: true
+- name: DensiCrafter
+  title: 'DensiCrafter: Physically-Constrained Generation and Fabrication of Self-Supporting Hollow Structures'
+  arxiv: '2511.09298'
+  venue: AAAI '26
+  section: physical
+  authors: Dang, Shengqi and Chai, Fu and Li, Jiaxin and Yuan, Chao and Ye, Wei and Cao, Nan
+  cite_key: dang2026densicrafter
+  in_paper: true
+- name: PhysX-Anything
+  title: 'PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image'
+  arxiv: '2511.13648'
+  venue: CVPR '26
+  section: physical
+  project: https://physx-anything.github.io
+  code: https://github.com/ziangcao0312/PhysX-Anything
+  authors: Cao, Ziang and Hong, Fangzhou and Chen, Zhaoxi and Pan, Liang and Liu, Ziwei
+  cite_key: cao2025physx
+  in_paper: true
+- name: DressCode
+  title: 'DressCode: Autoregressively Sewing and Generating Garments from Text Guidance'
+  arxiv: '2401.16465'
+  venue: ToG (SIG. '24)
+  section: deformable
+  project: https://ihe-kaii.github.io/DressCode
+  code: https://github.com/IHe-KaiI/DressCode
+  authors: He, Kai and Yao, Kaixin and Zhang, Qixuan and Yu, Jingyi and Liu, Lingjie and Xu, Lan
+  cite_key: he2024dresscode
+  in_paper: true
+- name: PhysDreamer
+  title: 'PhysDreamer: Physics-Based Interaction with 3D Objects via Video Generation'
+  arxiv: '2404.13026'
+  venue: ECCV '24
+  section: deformable
+  project: https://physdreamer.github.io
+  code: https://github.com/a1600012888/PhysDreamer
+  authors: Zhang, Tianyuan and Yu, Hong-Xing and Wu, Rundi and Feng, Brandon Y and Zheng, Changxi and Snavely, Noah and Wu, Jiajun and Freeman, William T
+  cite_key: zhang2024physdreamer
+  in_paper: true
+- name: GarmentDreamer
+  title: 'GarmentDreamer: 3DGS Guided Garment Synthesis with Diverse Geometry and Texture Details'
+  arxiv: '2405.12420'
+  venue: 3DV '25
+  section: deformable
+  project: https://xuan-li.github.io/GarmentDreamerDemo
+  authors: Li, Boqian and Li, Xuan and Jiang, Ying and Xie, Tianyi and Gao, Feng and Wang, Huamin and Yang, Yin and Jiang, Chenfanfu
+  cite_key: li2025garmentdreamer
+  in_paper: true
+- name: Dress-1-to-3
+  title: 'Dress-1-to-3: Single Image to Simulation-Ready 3D Outfit with Diffusion Prior and Differentiable Physics'
+  arxiv: '2502.03449'
+  venue: ToG (SIG. '25)
+  section: deformable
+  project: https://dress-1-to-3.github.io
+  authors: Li, Xuan and Yu, Chang and Du, Wenxin and Jiang, Ying and Xie, Tianyi and Chen, Yunuo and Yang, Yin and Jiang, Chenfanfu
+  cite_key: li2025dress
+  in_paper: true
+- name: Image2Garment
+  title: 'Image2Garment: Simulation-Ready Garment Generation from a Single Image'
+  arxiv: '2601.09658'
+  venue: arXiv '26
+  section: deformable
+  project: https://image2garment.github.io
+  authors: Can, Selim Emir and Ackermann, Jan and Nakayama, Kiyohiro and Liu, Ruofan and Wu, Tong and Zheng, Yang and Bertiche, Hugo and Chai, Menglei and Beeler, Thabo and Wetzstein, Gordon
+  cite_key: can2026image2garment
+  in_paper: true
+- name: TRELLIS
+  title: Structured 3D Latents for Scalable and Versatile 3D Generation
+  arxiv: '2412.01506'
+  venue: CVPR '25
+  section: pipelines
+  project: https://microsoft.github.io/TRELLIS
+  code: https://github.com/Microsoft/TRELLIS
+  authors: Xiang, Jianfeng and Lv, Zelong and Xu, Sicheng and Deng, Yu and Wang, Ruicheng and Zhang, Bowen and Chen, Dong and Tong, Xin and Yang, Jiaolong
+  cite_key: xiang2025structured
+  in_paper: true
+- name: TRELLIS.2
+  title: Native and Compact Structured Latents for 3D Generation
+  arxiv: '2512.14692'
+  venue: CVPR '26
+  section: pipelines
+  project: https://microsoft.github.io/TRELLIS.2
+  code: https://github.com/microsoft/TRELLIS.2
+  authors: Xiang, Jianfeng and Chen, Xiaoxue and Xu, Sicheng and Wang, Ruicheng and Lv, Zelong and Deng, Yu and Zhu, Hongyuan and Dong, Yue and Zhao, Hao and Yuan, Nicholas Jing and others
+  cite_key: xiang2025native
+  in_paper: true
+- name: EmbodiedGen
+  title: 'EmbodiedGen: Towards a Generative 3D World Engine for Embodied Intelligence'
+  arxiv: '2506.10600'
+  venue: NeurIPS '25
+  section: pipelines
+  project: https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html
+  authors: Wang, Xinjie and Liu, Liu and Cao, Yu and Wu, Ruiqi and Qin, Wenkang and Wang, Dehui and Sui, Wei and Su, Zhizhong
+  cite_key: wang2025embodiedgen
+  in_paper: true
+- name: Seed3D
+  title: 'Seed3D 1.0: From Images to High-Fidelity Simulation-Ready 3D Assets'
+  arxiv: '2510.19944'
+  venue: arXiv '25
+  section: pipelines
+  project: https://seed.bytedance.com/en/seed3d
+  authors: ByteDance Seed
+  cite_key: seed2025seed3d
+  in_paper: true
+- name: Graph-to-3D
+  title: 'Graph-to-3D: End-To-End Generation and Manipulation of 3D Scenes Using Scene Graphs'
+  arxiv: '2108.08841'
+  venue: ICCV '21
+  section: structure_scene
+  project: https://he-dhamo.github.io/Graphto3D
+  code: https://github.com/he-dhamo/graphto3d
+  authors: Dhamo, Helisa and Manhardt, Fabian and Navab, Nassir and Tombari, Federico
+  cite_key: graph_to_3d
+  in_paper: true
+- name: ATISS
+  title: 'ATISS: Autoregressive Transformers for Indoor Scene Synthesis'
+  arxiv: '2110.03675'
+  venue: NeurIPS '21
+  section: structure_scene
+  project: https://research.nvidia.com/labs/toronto-ai/ATISS
+  code: https://github.com/nv-tlabs/atiss
+  authors: Paschalidou, Despoina and Kar, Amlan and Shugrina, Maria and Kreis, Karsten and Geiger, Andreas and Fidler, Sanja
+  cite_key: atiss
+  in_paper: true
+- name: ProcTHOR
+  title: 'ProcTHOR: Large-Scale Embodied AI Using Procedural Generation'
+  arxiv: '2206.06994'
+  venue: NeurIPS '22
+  section: structure_scene
+  project: https://procthor.allenai.org
+  code: https://github.com/allenai/procthor
+  authors: Deitke, Matt and VanderBilt, Eli and Herrasti, Alvaro and Weihs, Luca and Ehsani, Kiana and Salvador, Jordi and Han, Winson and Kolve, Eric and Kembhavi, Aniruddha and Mottaghi, Roozbeh
+  cite_key: procthor
+  in_paper: true
+- name: CC3D
+  title: 'CC3D: Layout-Conditioned Generation of Compositional 3D Scenes'
+  arxiv: '2303.12074'
+  venue: ICCV '23
+  section: structure_scene
+  project: https://sherwinbahmani.github.io/cc3d
+  code: https://github.com/sherwinbahmani/cc3d
+  authors: Bahmani, Sherwin and Park, Jeong Joon and Paschalidou, Despoina and Yan, Xingguang and Wetzstein, Gordon and Guibas, Leonidas and Tagliasacchi, Andrea
+  cite_key: cc3d
+  in_paper: true
+- name: LayoutGPT
+  title: 'LayoutGPT: Compositional Visual Planning and Generation with Large Language Models'
+  arxiv: '2305.15393'
+  venue: NeurIPS '23
+  section: structure_scene
+  project: https://layoutgpt.github.io
+  code: https://github.com/weixi-feng/LayoutGPT
+  authors: Feng, Weixi and Zhu, Wanrong and Fu, Tsu-jui and Jampani, Varun and Akula, Arjun and He, Xuehai and Basu, Sugato and Wang, Xin Eric and Wang, William Yang
+  cite_key: layoutgpt
+  in_paper: true
+- name: Infinigen Indoors
+  title: 'Infinigen Indoors: Photorealistic Indoor Scenes Using Procedural Generation'
+  arxiv: '2406.11824'
+  venue: CVPR '24
+  section: structure_scene
+  project: https://infinigen.org
+  authors: Raistrick, Alexander and Mei, Lingjie and Kayan, Karhan and Yan, David and Zuo, Yiming and Han, Beining and Wen, Hongyu and Parakh, Meenal and Alexandropoulos, Stamatis and Lipson, Lahav and others
+  cite_key: infinigen_indoors
+  in_paper: true
+- name: Holodeck
+  title: 'Holodeck: Language Guided Generation of 3D Embodied AI Environments'
+  arxiv: '2312.09067'
+  venue: CVPR '24
+  section: structure_scene
+  project: https://yueyang1996.github.io/holodeck
+  code: https://github.com/allenai/Holodeck
+  authors: Yang, Yue and Sun, Fan-Yun and Weihs, Luca and VanderBilt, Eli and Herrasti, Alvaro and Han, Winson and Wu, Jiajun and Haber, Nick and Krishna, Ranjay and Liu, Lingjie and others
+  cite_key: holodeck
+  in_paper: true
+- name: DiffuScene
+  title: 'DiffuScene: Denoising Diffusion Models for Generative Indoor Scene Synthesis'
+  arxiv: '2303.14207'
+  venue: CVPR '24
+  section: structure_scene
+  project: https://tangjiapeng.github.io/projects/DiffuScene
+  code: https://github.com/tangjiapeng/DiffuScene
+  authors: Tang, Jiapeng and Nie, Yinyu and Markhasin, Lev and Dai, Angela and Thies, Justus and Nie, Matthias
+  cite_key: diffuscene
+  in_paper: true
+- name: PhyScene
+  title: 'PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI'
+  arxiv: '2404.09465'
+  venue: CVPR '24
+  section: controllable_scene
+  project: https://physcene.github.io
+  code: https://github.com/PhyScene/PhyScene/tree/main
+  authors: Yang, Yandan and Jia, Baoxiong and Zhi, Peiyuan and Huang, Siyuan
+  cite_key: physcene
+  in_paper: true
+- name: InstructScene
+  title: 'InstructScene: Instruction-Driven 3D Indoor Scene Synthesis with Semantic Graph Prior'
+  arxiv: '2402.04717'
+  venue: ICLR '24
+  section: controllable_scene
+  project: https://chenguolin.github.io/projects/InstructScene
+  code: https://github.com/chenguolin/InstructScene
+  authors: Chenguo Lin and Yadong Mu
+  cite_key: instructscene
+  in_paper: true
+- name: DepR
+  title: 'DepR: Depth Guided Single-View Scene Reconstruction with Instance-Level Diffusion'
+  arxiv: '2507.22825'
+  venue: ICCV '25
+  section: controllable_scene
+  project: https://mlpc-ucsd.github.io/DepR
+  code: https://github.com/mlpc-ucsd/Uni-3D
+  authors: Zhao, Qingcheng and Zhang, Xiang and Xu, Haiyang and Chen, Zeyuan and Xie, Jianwen and Gao, Yuan and Tu, Zhuowen
+  cite_key: DepR
+  in_paper: true
+- name: MIDI
+  title: 'MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation'
+  arxiv: '2412.03558'
+  venue: CVPR '25
+  section: controllable_scene
+  project: https://huanngzh.github.io/MIDI-Page
+  code: https://github.com/VAST-AI-Research/MIDI-3D
+  authors: Huang, Zehuan and Guo, Yuan-Chen and An, Xingqiao and Yang, Yunhan and Li, Yangguang and Zou, Zi-Xin and Liang, Ding and Liu, Xihui and Cao, Yan-Pei and Sheng, Lu
+  cite_key: midi
+  in_paper: true
+- name: DynScene
+  title: 'DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI'
+  paper_url: https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf
+  date: 2025-06
+  venue: CVPR '25
+  section: controllable_scene
+  authors: Lee, Sangmin and Park, Sungyong and Kim, Heewon
+  cite_key: dynscene
+  in_paper: true
+- name: FactoredScenes
+  title: 'From Programs to Poses: Factored Real-World Scene Generation via Learned Program Libraries'
+  arxiv: '2510.10292'
+  venue: NeurIPS '25
+  section: controllable_scene
+  project: https://stanford.edu/~joycj/projects/factoredscenes_neurips_2025.html
+  code: https://github.com/joyhsu0504/factored_scenes
+  authors: Hsu, Joy and Jin, Emily and Wu, Jiajun and Mitra, Niloy J.
+  cite_key: factoredscenes
+  in_paper: true
+- name: Steerable Scene Generation
+  title: Steerable Scene Generation with Post Training and Inference-Time Search
+  arxiv: '2505.04831'
+  venue: CoRL '25
+  section: controllable_scene
+  project: https://steerable-scene-generation.github.io
+  code: https://github.com/nepfaff/steerable-scene-generation
+  authors: Pfaff, Nicholas Ezra and Dai, Hongkai and Zakharov, Sergey and Iwase, Shun and Tedrake, Russ
+  cite_key: steerable_scene_generation
+  in_paper: true
+- name: SceneFoundry
+  title: 'SceneFoundry: Generating Interactive Infinite 3D Worlds'
+  arxiv: '2601.05810'
+  venue: arXiv '26
+  section: controllable_scene
+  project: https://anc891203.github.io/SceneFoundry-Demo
+  authors: Chen, ChunTeng and Hsu, YiChen and Liu, YiWen and Sun, WeiFang and Ni, TsaiChing and Lee, ChunYi and Sun, Min and Yang, YuanFu
+  cite_key: scenefoundry
+  in_paper: true
+- name: SceneGen
+  title: 'SceneGen: Single-Image 3D Scene Generation in One Feedforward Pass'
+  arxiv: '2508.15769'
+  venue: 3DV '26
+  section: controllable_scene
+  project: https://mengmouxu.github.io/SceneGen
+  code: https://github.com/Mengmouxu/SceneGen
+  authors: Meng, Yanxu and Wu, Haoning and Zhang, Ya and Xie, Weidi
+  cite_key: scenegen
+  in_paper: true
+- name: SceneCraft
+  title: 'Scenecraft: An LLM Agent for Synthesizing 3D Scenes as Blender Code'
+  arxiv: '2403.01248'
+  venue: ICML '24
+  section: agentic_scene
+  authors: Hu, Ziniu and Iscen, Ahmet and Jain, Aashi and Kipf, Thomas and Yue, Yisong and Ross, David A and Schmid, Cordelia and Fathi, Alireza
+  cite_key: sceneCraft
+  in_paper: true
+- name: Architect
+  title: 'Architect: Generating Vivid and Interactive 3D Scenes with Hierarchical 2D Inpainting'
+  arxiv: '2411.09823'
+  venue: NeurIPS '24
+  section: agentic_scene
+  project: https://wangyian-me.github.io/Architect
+  code: https://github.com/wangyian-me/architect_official_code/tree/main
+  authors: Wang, Yian and Qiu, Xiaowen and Liu, Jiageng and Chen, Zhehuan and Cai, Jiting and Wang, Yufei and Wang, Tsun-Hsuan and Xian, Zhou and Gan, Chuang
+  cite_key: architect
+  in_paper: true
+- name: OptiScene
+  title: 'OptiScene: LLM-Driven Indoor Scene Layout Generation via Scaled Human-Aligned Data Synthesis and Multi-Stage Preference Optimization'
+  arxiv: '2506.07570'
+  venue: NeurIPS '25
+  section: agentic_scene
+  project: https://polysummit.github.io/optiscene.github.io
+  code: https://github.com/YxuanAr/OptiScene
+  authors: Yang, Yixuan and Luo, Zhen and Ding, Tongsheng and Lu, Junru and Gao, Mingqi and Yang, Jinyu and Sanchez, Victor and Zheng, Feng
+  cite_key: optiscene
+  in_paper: true
+- name: LayoutVLM
+  title: 'LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models'
+  arxiv: '2412.02193'
+  venue: CVPR '25
+  section: agentic_scene
+  project: https://ai.stanford.edu/~sunfanyun/layoutvlm
+  code: https://github.com/sunfanyunn/LayoutVLM
+  authors: Sun, Fan-Yun and Liu, Weiyu and Gu, Siyi and Lim, Dylan and Bhat, Goutam and Tombari, Federico and Li, Manling and Haber, Nick and Wu, Jiajun
+  cite_key: layoutvlm
+  in_paper: true
+- name: SceneWeaver
+  title: 'SceneWeaver: All-In-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent'
+  arxiv: '2509.20414'
+  venue: NeurIPS '25
+  section: agentic_scene
+  project: https://scene-weaver.github.io
+  code: https://github.com/Scene-Weaver/SceneWeaver
+  authors: Yang, Yandan and Jia, Baoxiong and Zhang, Shujie and Huang, Siyuan
+  cite_key: sceneweaver
+  in_paper: true
+- name: CAST
+  title: 'CAST: Component-Aligned 3D Scene Reconstruction from an RGB Image'
+  arxiv: '2502.12894'
+  venue: TOG '25
+  section: agentic_scene
+  project: https://sites.google.com/view/cast4
+  authors: Yao, Kaixin and Zhang, Longwen and Yan, Xinhao and Zeng, Yan and Zhang, Qixuan and Xu, Lan and Yang, Wei and Gu, Jiayuan and Yu, Jingyi
+  cite_key: cast
+  in_paper: true
+- name: 3D-RE-GEN
+  title: '3D-RE-GEN: 3D Reconstruction of Indoor Scenes with a Generative Framework'
+  arxiv: '2512.17459'
+  venue: CVPR Find. '26
+  section: agentic_scene
+  project: https://3dregen.jdihlmann.com
+  authors: Sautter, Tobias and Dihlmann, Jan-Niklas and Lensch, Hendrik P.A.
+  cite_key: 3dregen
+  in_paper: true
+- name: MetaScenes
+  title: 'MetaScenes: Towards Automated Replica Creation for Real-World 3D Scans'
+  arxiv: '2505.02388'
+  venue: CVPR '25
+  section: agentic_scene
+  project: https://meta-scenes.github.io
+  code: https://github.com/meta-scenes/MetaScenes
+  authors: Yu, Huangyue and Jia, Baoxiong and Chen, Yixin and Yang, Yandan and Li, Puhao and Su, Rongpeng and Li, Jiaxin and Li, Qing and Liang, Wei and Zhu, Song-Chun and others
+  cite_key: metascenes
+  in_paper: true
+- name: DisCo-Layout
+  title: 'DisCo-Layout: Disentangling and Coordinating Semantic and Physical Refinement in a Multi-Agent Framework for 3D Indoor Layout Synthesis'
+  arxiv: '2510.02178'
+  venue: arXiv '25
+  section: agentic_scene
+  project: https://jialin75.github.io/DisCo-Layout
+  authors: Gao, Jialin and Zhou, Donghao and Liang, Mingjian and Liu, Lihao and Fu, Chi-Wing and Hu, Xiaowei and Heng, Pheng-Ann
+  cite_key: disco
+  in_paper: true
+- name: MarketGen
+  title: 'MarketGen: A Scalable Simulation Platform with Auto-Generated Embodied Supermarket Environments'
+  arxiv: '2511.21161'
+  venue: arXiv '25
+  section: agentic_scene
+  project: https://xuhu0529.github.io/MarketGen
+  authors: Hu, Xu and Feng, Yiyang and Peng, Junran and He, Jiawei and Chen, Liyi and Luo, Chuanchen and Yin, Xucheng and Li, Qing and Zhang, Zhaoxiang
+  cite_key: marketgen
+  in_paper: true
+- name: MesaTask
+  title: 'MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial Reasoning'
+  arxiv: '2509.22281'
+  venue: NeurIPS '25
+  section: agentic_scene
+  project: https://mesatask.github.io
+  code: https://github.com/InternRobotics/MesaTask
+  authors: Hao, Jinkun and Liang, Naifu and Luo, Zhen and XU, Xudong and Zhong, Weipeng and Yi, Ran and Jin, Yichen and Lyu, Zhaoyang and Zheng, Feng and Ma, Lizhuang and others
+  cite_key: mesatask
+  in_paper: true
+- name: TabletopGen
+  title: 'TabletopGen: Tabletop Scene Generation and Interactive Simulation for Robotic Manipulation'
+  arxiv: '2512.01204'
+  venue: ECCV '26
+  section: agentic_scene
+  project: https://d-robotics-ai-lab.github.io/TabletopGen.project
+  code: https://github.com/D-Robotics-AI-Lab/TabletopGen
+  authors: Wang, Ziqian and He, Yonghao and Yang, Licheng and Zou, Wei and Ma, Hongxuan and Liu, Liu and Sui, Wei and Guo, Yuxin and Su, Hu
+  cite_key: tabletopgen
+  in_paper: true
+- name: PAT3D
+  title: 'PAT3D: Physics-Augmented Text-To-3D Scene Generation'
+  arxiv: '2511.21978'
+  venue: ICLR '26
+  section: agentic_scene
+  authors: Lin, Guying and Huang, Kemeng and Liu, Michael and Gao, Ruihan and Chen, Hanke and Chen, Lyuhao and Lu, Beijia and Komura, Taku and Liu, Yuan and Zhu, Jun-Yan and others
+  cite_key: pat3d
+  in_paper: true
+- name: PhyScensis
+  title: 'PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement'
+  arxiv: '2602.14968'
+  venue: ICLR '26
+  section: agentic_scene
+  project: https://physcensis.github.io
+  authors: Wang, Yian and Yang, Han and Guo, Minghao and Qiu, Xiaowen and Wang, Tsun-Hsuan and Matusik, Wojciech and Tenenbaum, Joshua B and Gan, Chuang
+  cite_key: physcensis
+  in_paper: true
+- name: SAGE
+  title: 'SAGE: Scalable Agentic 3D Scene Generation for Embodied AI'
+  arxiv: '2602.10116'
+  venue: CVPR '26
+  section: agentic_scene
+  project: https://nvlabs.github.io/sage
+  code: https://github.com/NVlabs/sage
+  authors: Xia, Hongchi and Li, Xuan and Li, Zhaoshuo and Ma, Qianli and Xu, Jiashu and Liu, Ming-Yu and Cui, Yin and Lin, Tsung-Yi and Ma, Wei-Chiu and Wang, Shenlong and others
+  cite_key: sage
+  in_paper: true
+- name: SceneSmith
+  title: 'SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes'
+  arxiv: '2602.09153'
+  venue: ICML '26
+  section: agentic_scene
+  project: https://scenesmith.github.io
+  code: https://github.com/nepfaff/scenesmith
+  authors: Pfaff, Nicholas and Cohn, Thomas and Zakharov, Sergey and Cory, Rick and Tedrake, Russ
+  cite_key: scenesmith
+  in_paper: true
+- name: Scenethesis
+  title: 'Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation'
+  arxiv: '2505.02836'
+  venue: ICLR '26
+  section: agentic_scene
+  authors: Ling, Lu and Lin, Chen-Hsuan and Lin, Tsung-Yi and Ding, Yifan and Zeng, Yu and Sheng, Yichen and Ge, Yunhao and Liu, Ming-Yu and Bera, Aniket and Li, Zhaoshuo
+  cite_key: scenethesis
+  in_paper: true
+- name: 3D-Generalist
+  title: '3D-Generalist: Vision-Language-Action Models for Crafting 3D Worlds'
+  arxiv: '2507.06484'
+  venue: 3DV '26
+  section: agentic_scene
+  project: https://ai.stanford.edu/~sunfanyun/3d-generalist
+  authors: Sun, Fan-Yun and Wu, Shengguang and Jacobsen, Christian and Yim, Thomas and Zou, Haoming and Zook, Alex and Li, Shangru and Chou, Yu-Hsin and Can, Ethem F and Wu, Xunlei and others
+  cite_key: 3d-generalist
+  in_paper: true
+- name: Ditto
+  title: 'Ditto: Building Digital Twins of Articulated Objects from Interaction'
+  arxiv: '2202.08227'
+  venue: CVPR '22
+  section: digital_twin
+  project: https://ut-austin-rpl.github.io/Ditto
+  code: https://github.com/UT-Austin-RPL/Ditto
+  authors: Jiang, Zhenyu and Hsu, Cheng-Chun and Zhu, Yuke
+  cite_key: jiang2022ditto
+  in_paper: true
+- name: PARIS
+  title: 'PARIS: Part-Level Reconstruction and Motion Analysis for Articulated Objects'
+  arxiv: '2308.07391'
+  venue: ICCV '23
+  section: digital_twin
+  project: https://3dlg-hcvc.github.io/paris
+  code: https://github.com/3dlg-hcvc/paris
+  authors: Liu, Jiayi and Mahdavi-Amiri, Ali and Savva, Manolis
+  cite_key: paris
+  in_paper: true
+- name: DRAWER
+  title: 'DRAWER: Digital Reconstruction and Articulation with Environment Realism'
+  arxiv: '2504.15278'
+  venue: CVPR '25
+  section: digital_twin
+  project: https://xiahongchi.github.io/DRAWER
+  code: https://github.com/xiahongchi/DRAWER
+  authors: Hongchi Xia and Entong Su and Marius Memmel and Arhan Jain and Raymond Yu and Numfor Mbiziwo-Tiapo and Ali Farhadi and Abhishek Gupta and Shenlong Wang and Wei-Chiu Ma
+  cite_key: drawer
+  in_paper: true
+- name: LiteReality
+  title: 'LiteReality: Graphics-Ready 3D Scene Reconstruction from RGB-D Scans'
+  arxiv: '2507.02861'
+  venue: NeurIPS '25
+  section: digital_twin
+  project: https://litereality.github.io
+  code: https://github.com/LiteReality/LiteReality
+  authors: Huang, Zhening and Wu, Xiaoyang and Zhong, Fangcheng and Zhao, Hengshuang and Nie, Matthias and Lasenby, Joan
+  cite_key: litereality
+  in_paper: true
+- name: LatticeWorld
+  title: 'LatticeWorld: A Multimodal Large Language Model-Empowered Framework for Interactive Complex World Generation'
+  arxiv: '2509.05263'
+  venue: arXiv '25
+  section: digital_twin
+  authors: Duan, Yinglin and Zou, Zhengxia and Gu, Tongwei and Jia, Wei and Zhao, Zhan and Xu, Luyi and Liu, Xinzhu and Lin, Yenan and Jiang, Hao and Chen, Kang and others
+  cite_key: latticeworld
+  in_paper: true
+- name: RoboSimGS
+  title: High-Fidelity Simulated Data Generation for Real-World Zero-Shot Robotic Manipulation Learning with Gaussian Splatting
+  arxiv: '2510.10637'
+  venue: RA-L '26
+  section: digital_twin
+  project: https://robosimgs.github.io
+  code: https://github.com/Maxwell-Zhao/RoboSimGS
+  authors: Zhao, Haoyu and Zeng, Cheng and Zhuang, Linghao and Zhao, Yaxi and Xue, Shengke and Wang, Hao and Zhao, Xingyue and Li, Zhongyu and Li, Kehan and Huang, Siteng and others
+  cite_key: robosimgs
+  in_paper: true
+- name: Real-is-Sim
+  title: 'Real-is-Sim: Bridging the Sim-To-Real Gap with a Dynamic Digital Twin'
+  arxiv: '2504.03597'
+  venue: ICRA '26
+  section: digital_twin
+  project: https://real-is-sim.github.io
+  authors: Abou-Chakra, Jad and Sun, Lingfeng and Rana, Krishan and May, Brandon and Schmeckpeper, Karl and Suenderhauf, Niko and Minniti, Maria Vittoria and Herlant, Laura
+  cite_key: realissim
+  in_paper: true
+- name: ArticFlow
+  title: 'ArticFlow: Generative Simulation of Articulated Mechanisms'
+  arxiv: '2511.17883'
+  venue: arXiv '25
+  section: digital_twin
+  authors: Lin, Jiong and Ruan, Jinchen and Lipson, Hod
+  cite_key: lin2025articflow
+  in_paper: true
+- name: ArticulatedGS
+  title: 'ArticulatedGS: Self-Supervised Digital Twin Modeling of Articulated Objects Using 3D Gaussian Splatting'
+  arxiv: '2503.08135'
+  venue: CVPR '25
+  section: digital_twin
+  authors: Guo, Junfu and Xin, Yu and Liu, Gaoyi and Xu, Kai and Liu, Ligang and Hu, Ruizhen
+  cite_key: guo2025articulatedgs
+  in_paper: true
+- name: ArtGS
+  title: 'ArtGS: Building Interactable Replicas of Complex Articulated Objects via Gaussian Splatting'
+  arxiv: '2502.19459'
+  venue: ICLR '25
+  section: digital_twin
+  project: https://articulate-gs.github.io
+  code: https://github.com/YuLiu-LY/ArtGS
+  authors: Liu, Yu and Jia, Baoxiong and Lu, Ruijie and Ni, Junfeng and Zhu, Song-Chun and Huang, Siyuan
+  cite_key: liu2025artgs
+  in_paper: true
+- name: PhysTwin
+  title: 'PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos'
+  arxiv: '2503.17973'
+  venue: ICCV '25
+  section: digital_twin
+  project: https://jianghanxiao.github.io/phystwin-web
+  code: https://github.com/Jianghanxiao/PhysTwin
+  authors: Jiang, Hanxiao and Hsu, Hao-Yu and Zhang, Kaifeng and Yu, Hsin-Ni and Wang, Shenlong and Li, Yunzhu
+  cite_key: jiang2025phystwin
+  in_paper: true
+- name: RoboScape
+  title: 'RoboScape: Physics-informed embodied world model'
+  arxiv: '2506.23135'
+  venue: NeurIPS '25
+  section: digital_twin
+  code: https://github.com/tsinghua-fib-lab/RoboScape
+  authors: Shang, Yu and Zhang, Xin and Tang, Yinzhou and Jin, Lei and Gao, Chen and Wu, Wei and Li, Yong
+  cite_key: RoboScape
+  in_paper: true
+- name: TwinAligner
+  title: 'TwinAligner: Visual-Dynamic Alignment Empowers Physics-aware Real2Sim2Real for Robotic Manipulation'
+  arxiv: '2512.19390'
+  venue: arXiv '25
+  section: digital_twin
+  project: https://twin-aligner.github.io
+  code: https://github.com/TwinAligner/TwinAligner
+  authors: Fan, Hongwei and Dai, Hang and Zhang, Jiyao and Li, Jinzhou and Yan, Qiyang and Zhao, Yujie and Gao, Mingju and Wu, Jinghang and Tang, Hao and Dong, Hao
+  cite_key: twinaligner
+  in_paper: true
+- name: Scalable Real2Sim
+  title: 'Scalable Real2Sim: Physics-Aware Asset Generation via Robotic Pick-And-Place Setups'
+  arxiv: '2503.00370'
+  venue: IROS '25
+  section: digital_twin
+  project: https://scalable-real2sim.github.io
+  code: https://github.com/nepfaff/scalable-real2sim
+  authors: Pfaff, Nicholas and Fu, Evelyn and Binagia, Jeremy and Isola, Phillip and Tedrake, Russ
+  cite_key: scalable_robosimgs
+  in_paper: true
+- name: REArtGS++
+  title: 'REArtGS++: Generalizable Articulation Reconstruction with Temporal Geometry Constraint via Planar Gaussian Splatting'
+  arxiv: '2511.17059'
+  venue: CVPR '26
+  section: digital_twin
+  project: https://sites.google.com/view/reartgs2/home
+  authors: Wu, Di and Liu, Liu and Huang, Anran and Liu, Yuyan and Yu, Qiaojun and Liu, Shaofan and Song, Liangtu and Lu, Cewu
+  cite_key: wu2025reartgs++
+  in_paper: true
+- name: RoboGSim
+  title: 'RoboGSim: A Real2Sim2Real Robotic Gaussian Splatting Simulator'
+  arxiv: '2411.11839'
+  venue: arXiv '24
+  section: augmentation
+  project: https://robogsim.github.io
+  authors: Li, Xinhai and Li, Jialin and Zhang, Ziheng and Zhang, Rui and Jia, Fan and Wang, Tiancai and Fan, Haoqiang and Tseng, Kuo-Kun and Wang, Ruiping
+  cite_key: robogsim
+  in_paper: true
+- name: Splat-MOVER
+  title: 'Splat-MOVER: Multi-Stage, Open-Vocabulary Robotic Manipulation via Editable Gaussian Splatting'
+  arxiv: '2405.04378'
+  venue: CoRL '24
+  section: augmentation
+  authors: Shorinwa, Ola and Tucker, Johnathan and Smith, Aliyah and Swann, Aiden and Chen, Timothy and Firoozi, Roya and Kennedy III, Monroe and Schwager, Mac
+  cite_key: shorinwa2024splat
+  in_paper: true
+- name: Manipulate Anywhere
+  title: 'Learning to Manipulate Anywhere: A Visual Generalizable Framework for Reinforcement Learning'
+  arxiv: '2407.15815'
+  venue: CoRL '24
+  section: augmentation
+  authors: Yuan, Zhecheng and Wei, Tianming and Cheng, Shuiqi and Zhang, Gu and Chen, Yuanpei and Xu, Huazhe
+  cite_key: yuan2024learning
+  in_paper: true
+- name: RoboSplat
+  title: Novel Demonstration Generation with Gaussian Splatting Enables Robust One-Shot Manipulation
+  arxiv: '2504.13175'
+  venue: RSS '25
+  section: augmentation
+  project: https://yangsizhe.github.io/robosplat
+  code: https://github.com/InternRobotics/robosplat
+  authors: Yang, Sizhe and Yu, Wenye and Zeng, Jia and Lv, Jun and Ren, Kerui and Lu, Cewu and Lin, Dahua and Pang, Jiangmiao
+  cite_key: novel_demo_gs
+  in_paper: true
+- name: SplatSim
+  title: 'SplatSim: Zero-Shot Sim2Real Transfer of RGB Manipulation Policies Using Gaussian Splatting'
+  arxiv: '2409.10161'
+  venue: ICRA '25
+  section: augmentation
+  project: https://splatsim.github.io
+  code: https://github.com/qureshinomaan/SplatSim
+  authors: Qureshi, M Nomaan and Garg, Sparsh and Yandun, Francisco and Held, David and Kantor, George and Silwal, Abhisesh
+  cite_key: splatsim
+  in_paper: true
+- name: SIGHT
+  title: 'SIGHT: Synthesizing Image-Text Conditioned and Geometry-Guided 3D Hand-Object Trajectories'
+  arxiv: '2503.22869'
+  venue: arXiv '25
+  section: augmentation
+  authors: Gavryushin, Alexey and Delitzas, Alexandros and Van Gool, Luc and Pollefeys, Marc and Mo, Kaichun and Wang, Xi
+  cite_key: gavryushin2025sight
+  in_paper: true
+- name: RoboTransfer
+  title: 'RoboTransfer: Controllable Geometry-Consistent Video Diffusion for Manipulation Policy Transfer'
+  arxiv: '2505.23171'
+  venue: CVPR Find. '26
+  section: augmentation
+  authors: Liu, Liu and Wang, Xiaofeng and Zhao, Guosheng and Li, Keyu and Qin, Wenkang and Zhu, Jiagang and Qiu, Jiaxiong and Zhu, Zheng and Huang, Guan and Su, Zhizhong
+  cite_key: liu2025robotransfer
+  in_paper: true
+- name: GAF
+  title: 'GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation'
+  arxiv: '2506.14135'
+  venue: ICRA '26
+  section: augmentation
+  project: http://chaiying1.github.io/GAF.github.io/project_page
+  authors: Chai, Ying and Deng, Litao and Shao, Ruizhi and Zhang, Jiajun and Lv, Kangchen and Xing, Liangjun and Li, Xiang and Zhang, Hongwen and Liu, Yebin
+  cite_key: gaf
+  in_paper: true
+- name: EgoDemoGen
+  title: 'EgoDemoGen: Novel Egocentric Demonstration Generation Enables Viewpoint-Robust Manipulation'
+  arxiv: '2509.22578'
+  venue: arXiv '25
+  section: augmentation
+  authors: Xu, Yuan and Yang, Jiabing and Wang, Xiaofeng and Chen, Yixiang and Zhu, Zheng and Fang, Bowen and Huang, Guan and Chen, Xinze and Ye, Yun and Zhang, Qiang and others
+  cite_key: xu2025egodemogen
+  in_paper: true
+- name: ExoGS
+  title: 'ExoGS: A 4D Real-To-Sim-To-Real Framework for Scalable Manipulation Data Collection'
+  arxiv: '2601.18629'
+  venue: arXiv '26
+  section: augmentation
+  code: https://github.com/zaixiabalala/ExoGS
+  authors: Wang, Yiming and Zhang, Ruogu and Li, Minyang and Shi, Hao and Wang, Junbo and Li, Deyi and Ren, Jieji and Liu, Wenhai and Wang, Weiming and Fang, Hao-Shu
+  cite_key: wang2026exogs
+  in_paper: true
+- name: MimicGen
+  title: 'MimicGen: A Data Generation System for Scalable Robot Learning Using Human Demonstrations'
+  arxiv: '2310.17596'
+  venue: CoRL '23
+  section: demo_generation
+  project: https://mimicgen.github.io
+  code: https://github.com/NVlabs/mimicgen_environments
+  authors: Mandlekar, Ajay and Nasiriany, Soroush and Wen, Bowen and Akinola, Iretiayo and Narang, Yashraj and Fan, Linxi and Zhu, Yuke and Fox, Dieter
+  cite_key: mandlekar2023mimicgen
+  in_paper: true
+- name: Gen2Sim
+  title: 'Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models'
+  arxiv: '2310.18308'
+  venue: ICRA '24
+  section: demo_generation
+  project: https://gen2sim.github.io
+  code: https://github.com/pushkalkatara/Gen2Sim
+  authors: Katara, Pushkal and Xian, Zhou and Fragkiadaki, Katerina
+  cite_key: gen2sim
+  in_paper: true
+- name: GenSim2
+  title: 'GenSim2: Scaling Robot Data Generation with Multi-Modal and Reasoning LLMs'
+  arxiv: '2410.03645'
+  venue: CoRL '24
+  section: demo_generation
+  project: https://gensim2.github.io
+  code: https://github.com/GenSim2/gensim2
+  authors: Hua, Pu and Liu, Minghuan and Macaluso, Annabella and Lin, Yunfeng and Zhang, Weinan and Xu, Huazhe and Wang, Lirui
+  cite_key: gensim2
+  in_paper: true
+- name: DemoGen
+  title: 'DemoGen: Synthetic Demonstration Generation for Data-Efficient Visuomotor Policy Learning'
+  arxiv: '2502.16932'
+  venue: RSS '25
+  section: demo_generation
+  project: https://demo-generation.github.io
+  code: https://github.com/TEA-Lab/DemoGen
+  authors: Xue, Zhengrong and Deng, Shuying and Chen, Zhenyang and Wang, Yixuan and Yuan, Zhecheng and Xu, Huazhe
+  cite_key: demogen
+  in_paper: true
+- name: Real2Render2Real
+  title: 'Real2Render2Real: Scaling Robot Data Without Dynamics Simulation or Robot Hardware'
+  arxiv: '2505.09601'
+  venue: CoRL '25
+  section: demo_generation
+  project: https://real2render2real.com
+  authors: Yu, Justin and Fu, Letian and Huang, Huang and El-Refai, Karim and Ambrus, Rares Andrei and Cheng, Richard and Irshad, Muhammad Zubair and Goldberg, Ken
+  cite_key: r2r2r
+  in_paper: true
+- name: ManipDreamer3D
+  title: 'ManipDreamer3D: Synthesizing Plausible Robotic Manipulation Video with Occupancy-Aware 3D Trajectory'
+  arxiv: '2509.05314'
+  venue: AAAI '26
+  section: demo_generation
+  authors: Li, Ying and Wei, Xiaobao and Chi, Xiaowei and Li, Yuming and Zhao, Zhongyu and Wang, Hao and Ma, Ningning and Lu, Ming and Han, Sirui
+  cite_key: manipdreamer3d
+  in_paper: true
+- name: DreamGen
+  title: 'DreamGen: Unlocking Generalization in Robot Learning Through Video World Models'
+  arxiv: '2505.12705'
+  venue: CoRL '25
+  section: demo_generation
+  project: https://research.nvidia.com/labs/gear/dreamgen
+  code: http://github.com/nvidia/GR00T-dreams
+  authors: Jang, Joel and Ye, Seonghyeon and Lin, Zongyu and Xiang, Jiannan and Bjorck, Johan and Fang, Yu and Hu, Fengyuan and Huang, Spencer and Kundalia, Kaushil and Lin, Yen-Chen and others
+  cite_key: dreamgen
+  in_paper: true
+- name: AnchorDream
+  title: 'AnchorDream: Repurposing Video Diffusion for Embodiment-Aware Robot Data Synthesis'
+  arxiv: '2512.11797'
+  venue: ICRA '26
+  section: demo_generation
+  project: https://junjieye.com/AnchorDream
+  authors: Ye, Junjie and Xue, Rong and Van Hoorick, Basile and Tokmakov, Pavel and Irshad, Muhammad Zubair and Wang, Yue and Guizilini, Vitor
+  cite_key: anchordream
+  in_paper: true
+- name: PhysWorld
+  title: Robot Learning from a Physical World Model
+  arxiv: '2511.07416'
+  venue: arXiv '25
+  section: demo_generation
+  project: https://physworld.github.io
+  code: https://github.com/AlanYoung123/PhysWorld
+  authors: Mao, Jiageng and He, Sicheng and Wu, Hao-Ning and You, Yang and Sun, Shuyang and Wang, Zhicheng and Bao, Yanan and Chen, Huizhong and Guibas, Leonidas and Guizilini, Vitor and others
+  cite_key: physworld
+  in_paper: true
+- name: DRAW2ACT
+  title: 'DRAW2ACT: Turning Depth-Encoded Trajectories into Robotic Demonstration Videos'
+  arxiv: '2512.14217'
+  venue: ICRA '26
+  section: demo_generation
+  authors: Bai, Yang and Yang, Liudi and Eskandar, George and Shen, Fengyi and Altillawi, Mohammad and Liu, Ziyuan and Kutyniok, Gitta
+  cite_key: draw2act
+  in_paper: true
+- name: Video2Act
+  title: 'Video2Act: A Dual-System Video Diffusion Policy with Robotic Spatio-Motional Modeling'
+  arxiv: '2512.03044'
+  venue: arXiv '25
+  section: demo_generation
+  authors: Jia, Yueru and Liu, Jiaming and Liu, Shengbang and Zhou, Rui and Yu, Wanhe and Yan, Yuyang and Chi, Xiaowei and Guo, Yandong and Shi, Boxin and Zhang, Shanghang
+  cite_key: video2act
+  in_paper: true
+- name: GWM
+  title: 'GWM: Towards Scalable Gaussian World Models for Robotic Manipulation'
+  arxiv: '2508.17600'
+  venue: ICCV '25
+  section: demo_generation
+  project: https://gaussian-world-model.github.io
+  code: https://github.com/Gaussian-World-Model/gaussianwm
+  authors: Lu, Guanxing and Jia, Baoxiong and Li, Puhao and Chen, Yixin and Wang, Ziwei and Tang, Yansong and Huang, Siyuan
+  cite_key: gwm
+  in_paper: true
+- name: GraspVLA
+  title: 'GraspVLA: A Grasping Foundation Model Pre-Trained on Billion-Scale Synthetic Action Data'
+  arxiv: '2505.03233'
+  venue: CoRL '25
+  section: demo_generation
+  project: https://pku-epic.github.io/GraspVLA-web
+  code: https://github.com/PKU-EPIC/GraspVLA
+  authors: Deng, Shengliang and Yan, Mi and Wei, Songlin and Ma, Haixin and Yang, Yuxin and Chen, Jiayi and Zhang, Zhiqi and Yang, Taoyu and Zhang, Xuheng and Zhang, Wenhao and others
+  cite_key: graspvla
+  in_paper: true
+- name: AOMGen
+  title: 'AOMGen: Photoreal, Physics-Consistent Demonstration Generation for Articulated Object Manipulation'
+  arxiv: '2512.18396'
+  venue: CVPR Find. '26
+  section: demo_generation
+  authors: Wu, Yulu and Cheng, Jiujun and Wang, Haowen and Suo, Dengyang and Ren, Pei and Mao, Qichao and Gao, Shangce and Huang, Yakun
+  cite_key: wu2025aomgen
+  in_paper: true
+datasets:
+- name: ShapeNet
+  title: 'ShapeNet: An Information-Rich 3D Model Repository'
+  arxiv: '1512.03012'
+  venue: arXiv '15
+  section: object_datasets
+  website: https://shapenet.org/
+  details: 51K objects / 55 cat.
+  cite_key: chang2015shapenet
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 51K objects / 55 cat.
+    summary: Geometry, Semantics
+    phys: 'No'
+    kin: 'No'
+    sim: 'No'
+- name: PartNet
+  title: 'PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding'
+  arxiv: '1812.02713'
+  venue: CVPR '19
+  section: object_datasets
+  website: https://partnet.cs.stanford.edu/
+  details: 26.7K objects / 24 cat.
+  cite_key: mo2019partnet
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 26.7K objects / 24 cat.
+    summary: Part Seg. (573K instances)
+    phys: 'No'
+    kin: 'No'
+    sim: 'No'
+- name: PartNet-Mobility
+  title: 'SAPIEN: A SimulAted Part-based Interactive ENvironment'
+  arxiv: '2003.08515'
+  venue: CVPR '20
+  section: object_datasets
+  website: https://sapien.ucsd.edu/browse
+  details: 2,346 objects / 46 cat.
+  cite_key: xiang2020sapien
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 2,346 objects / 46 cat.
+    summary: Part Seg., Joint Params.
+    phys: 'No'
+    kin: 'Yes'
+    sim: 'Yes'
+- name: 3D-FUTURE
+  title: '3D-FUTURE: 3D Furniture shape with TextURE'
+  arxiv: '2009.09633'
+  venue: IJCV '21
+  section: object_datasets
+  website: https://tianchi.aliyun.com/dataset/98063
+  details: 13.1K objects / 43 cat.
+  cite_key: 3d-future
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 13.1K objects / 43 cat.
+    summary: Geometry, Semantics, Texture
+    phys: 'No'
+    kin: 'No'
+    sim: 'No'
+- name: GSO
+  title: 'Google Scanned Objects: A High-Quality Dataset of 3D Scanned Household Items'
+  arxiv: '2204.11918'
+  venue: ICRA '22
+  section: object_datasets
+  website: https://research.google/blog/scanned-objects-by-google-research-a-dataset-of-3d-scanned-common-household-items/
+  details: 1,030 objects
+  cite_key: downs2022google
+  in_paper: true
+  homepage:
+    category: Real Scans
+    type: Real Scans
+    scale: 1,030 objects
+    summary: Geometry, PBR Material
+    phys: 'No'
+    kin: 'No'
+    sim: 'Yes'
+    url: https://huggingface.co/datasets/gso-bench/gso
+- name: ABO
+  title: 'ABO: Dataset and Benchmarks for Real-World 3D Object Understanding'
+  arxiv: '2110.06199'
+  venue: CVPR '22
+  section: object_datasets
+  website: https://amazon-berkeley-objects.s3.amazonaws.com/index.html
+  details: 7,953 objects / 63 cat.
+  cite_key: collins2022abo
+  in_paper: true
+  homepage:
+    category: Artist-designed
+    type: Artist-designed
+    scale: 7,953 objects / 63 cat.
+    summary: Geometry, PBR Material, Real Dims.
+    phys: 'No'
+    kin: 'No'
+    sim: Partial
+- name: AKB-48
+  title: 'AKB-48: A Real-World Articulated Object Knowledge Base'
+  arxiv: '2202.08432'
+  venue: CVPR '22
+  section: object_datasets
+  website: https://liuliu66.github.io/articulationobjects/
+  details: 2,037 objects / 48 cat.
+  cite_key: liu2022akb
+  in_paper: true
+  homepage:
+    category: Real Scans
+    type: Real Scans
+    scale: 2,037 objects / 48 cat.
+    summary: Part Seg., Joint, Mass, Inertia, Friction
+    phys: 'Yes'
+    kin: 'Yes'
+    sim: 'Yes'
+- name: Objaverse
+  title: 'Objaverse: A Universe of Annotated 3D Objects'
+  arxiv: '2212.08051'
+  venue: CVPR '23
+  section: object_datasets
+  website: https://huggingface.co/datasets/allenai/objaverse
+  details: 800K+ objects
+  cite_key: deitke2023objaverse
+  in_paper: true
+  homepage:
+    category: Mixed
+    type: Mixed
+    scale: 800K+ objects
+    summary: Geometry, Captions, Tags, Animations
+    phys: 'No'
+    kin: 'No'
+    sim: 'No'
+- name: GAPartNet
+  title: 'GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts'
+  arxiv: '2211.05272'
+  venue: CVPR '23
+  section: object_datasets
+  website: https://pku-epic.github.io/GAPartNet/
+  details: 1,166 objects / 27 cat.
+  cite_key: geng2023gapartnet
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 1,166 objects / 27 cat.
+    summary: Part Seg., Poses (8,489 instances)
+    phys: 'No'
+    kin: 'Yes'
+    sim: 'Yes'
+- name: ClothesNet
+  title: 'ClothesNet: An Information-Rich 3D Garment Model Repository with Simulated Clothes'
+  arxiv: '2308.09987'
+  venue: ICCV '23
+  section: object_datasets
+  website: https://sites.google.com/view/clothesnet
+  details: 4,400+ garments / 11 cat.
+  cite_key: zhou2023clothesnet
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 4,400+ garments / 11 cat.
+    summary: Geometry, Boundary Lines, Keypoints
+    phys: 'No'
+    kin: 'No'
+    sim: Partial
+- name: Objaverse-XL
+  title: 'Objaverse-XL: A Universe of 10M+ 3D Objects'
+  arxiv: '2307.05663'
+  venue: NeurIPS '23
+  section: object_datasets
+  website: https://objaverse.allenai.org/
+  details: 10.2M+ objects
+  cite_key: deitke2023objaversexl
+  in_paper: true
+  homepage:
+    category: Mixed
+    type: Mixed
+    scale: 10.2M+ objects
+    summary: Geometry, Texture, Tags
+    phys: 'No'
+    kin: 'No'
+    sim: 'No'
+- name: GarmentLab
+  title: 'GarmentLab: A Unified Simulation and Benchmark for Garment Manipulation'
+  arxiv: '2411.01200'
+  venue: NeurIPS '24
+  section: object_datasets
+  website: https://garmentlab.github.io/
+  details: 9K+ objects / 11 garment cat.
+  cite_key: lu2024garmentlab
+  in_paper: true
+  homepage:
+    category: Sim. Env.
+    type: Sim. Env.
+    scale: 9K+ objects / 11 garment cat.
+    summary: Physics (PBD/FEM), Task Anno.
+    phys: 'Yes'
+    kin: 'No'
+    sim: 'Yes'
+- name: Articulation-XL
+  title: 'MagicArticulate: Make Your 3D Models Articulation-Ready'
+  arxiv: '2502.12135'
+  venue: CVPR '25
+  section: object_datasets
+  website: https://huggingface.co/datasets/Seed3D/Articulation-XL2.0
+  details: 48K+ objects
+  cite_key: song2025magicarticulate
+  in_paper: true
+  homepage:
+    category: Mixed
+    type: Mixed
+    scale: 48K+ objects
+    summary: Skeleton, Skinning Weights
+    phys: 'No'
+    kin: 'Yes'
+    sim: Partial
+- name: DTC
+  title: 'Digital Twin Catalog: A Large-Scale Photorealistic 3D Object Digital Twin Dataset'
+  arxiv: '2504.08541'
+  venue: CVPR '25
+  section: object_datasets
+  website: https://www.projectaria.com/datasets/dtc/
+  details: 2K objects / 40 cat.
+  cite_key: dtc
+  in_paper: true
+  homepage:
+    category: Real Scans
+    type: Real Scans
+    scale: 2K objects / 40 cat.
+    summary: Geometry, 4K PBR, Evaluation Seqs.
+    phys: 'No'
+    kin: 'No'
+    sim: 'Yes'
+- name: PhysXNet
+  title: 'PhysX-3D: Physical-Grounded 3D Asset Generation'
+  arxiv: '2507.12465'
+  venue: NeurIPS '25
+  section: object_datasets
+  website: https://huggingface.co/datasets/Caoza/PhysX-3D
+  details: 26K objects
+  cite_key: cao2025physx3d
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 26K objects
+    summary: Joint, Mass, Material, Friction
+    phys: 'Yes'
+    kin: 'Yes'
+    sim: 'Yes'
+- name: PhysX-Mobility
+  title: 'PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image'
+  arxiv: '2511.13648'
+  venue: CVPR '26
+  section: object_datasets
+  website: https://huggingface.co/datasets/Caoza/PhysX-Mobility
+  details: 2K+ objects / 47 cat.
+  cite_key: cao2025physx
+  in_paper: true
+  homepage:
+    category: CAD Models
+    type: CAD Models
+    scale: 2K+ objects / 47 cat.
+    summary: Geometry, Kinematics, Physics (per-part)
+    phys: 'Yes'
+    kin: 'Yes'
+    sim: 'Yes'
+- name: ManiTwin
+  title: 'ManiTwin: Scaling Data-Generation-Ready Digital Object Dataset to 100K'
+  arxiv: '2603.16866'
+  venue: arXiv '26
+  section: object_datasets
+  website: https://manitwin.github.io/
+  details: 100K+ objects
+  cite_key: manitwin
+  in_paper: true
+  homepage:
+    category: Mixed
+    type: Mixed
+    scale: 100K+ objects
+    summary: Geometry, Manipulation Anno., Sim-ready
+    phys: Partial
+    kin: Partial
+    sim: 'Yes'
+- name: Matterport3D
+  title: 'Matterport3D: Learning from RGB-D Data in Indoor Environments'
+  arxiv: '1709.06158'
+  venue: 3DV '17
+  section: scene_datasets
+  website: https://niessner.github.io/Matterport/
+  details: 90 scenes / 10.8K pans / 194K RGB-D
+  cite_key: matterport3d
+  in_paper: true
+  homepage:
+    category: Source Scene
+    type: Real Scans
+    scale: 90 scenes / 10.8K pans / 194K RGB-D
+    summary: Geometry, Poses, Recon., 2D/3D Sem. Seg.
+    sim: Partial
+- name: ScanNet
+  title: 'ScanNet: Richly-annotated 3D Reconstructions of Indoor Scenes'
+  arxiv: '1702.04405'
+  venue: CVPR '17
+  section: scene_datasets
+  website: http://www.scan-net.org/
+  details: 1.5K scans / 2.5M views
+  cite_key: scannet
+  in_paper: true
+  homepage:
+    category: Source Scene
+    type: Real Scans
+    scale: 1.5K scans / 2.5M views
+    summary: Geometry, Poses, Recon., Sem. Seg.
+    sim: Partial
+- name: Replica
+  title: 'The Replica Dataset: A Digital Replica of Indoor Spaces'
+  arxiv: '1906.05797'
+  venue: arXiv '19
+  section: scene_datasets
+  website: https://github.com/facebookresearch/Replica-Dataset
+  details: 18 scenes
+  cite_key: replica
+  in_paper: true
+  homepage:
+    category: Source Scene
+    type: Real Reconstructions
+    scale: 18 scenes
+    summary: Geometry, HDR Texture, Sem./Inst. Labels
+    sim: 'Yes'
+- name: 3DSSG
+  title: Learning 3D Semantic Scene Graphs from 3D Indoor Reconstructions
+  arxiv: '2004.03967'
+  venue: CVPR '20
+  section: scene_datasets
+  website: https://3dssg.github.io/
+  details: 1.5K SGs / 48K objs / 544K rels
+  cite_key: 3dssg
+  in_paper: true
+  homepage:
+    category: Source Scene
+    type: Scene Graphs
+    scale: 1.5K SGs / 48K objs / 544K rels
+    summary: Semantics, Attributes, Relations
+    sim: 'No'
+- name: 3D-FRONT
+  title: '3D-FRONT: 3D Furnished Rooms with layOuts and semaNTics'
+  arxiv: '2011.09127'
+  venue: ICCV '21
+  section: scene_datasets
+  website: https://tianchi.aliyun.com/specials/promotion/alibaba-3d-scene-dataset
+  details: 18.9K rooms / 6.8K houses
+  cite_key: 3d-front
+  in_paper: true
+  homepage:
+    category: Source Scene
+    type: Synthetic Scenes
+    scale: 18.9K rooms / 6.8K houses
+    summary: Layout, Semantics, Texture
+    sim: 'No'
+- name: HM3D
+  title: 'Habitat-Matterport 3D Dataset (HM3D): 1000 Large-scale 3D Environments for Embodied AI'
+  arxiv: '2109.08238'
+  venue: NeurIPS D&B '21
+  section: scene_datasets
+  website: https://aihabitat.org/datasets/hm3d/
+  details: 1K scans
+  cite_key: HM3D
+  in_paper: true
+  homepage:
+    category: Source Scene
+    type: Real Scans
+    scale: 1K scans
+    summary: Geometry, Texture, Recon.
+    sim: 'Yes'
+- name: ProcTHOR-10K
+  title: 'ProcTHOR: Large-Scale Embodied AI Using Procedural Generation'
+  arxiv: '2206.06994'
+  venue: NeurIPS '22
+  section: scene_datasets
+  website: https://procthor.allenai.org/
+  details: 10K houses
+  cite_key: procthor
+  in_paper: true
+  homepage:
+    category: Generated Scene
+    type: Procedural Scenes
+    scale: 10K houses
+    summary: Layout, Interactive Objects
+    sim: 'Yes'
+- name: MetaScenes
+  title: 'MetaScenes: Towards Automated Replica Creation for Real-world 3D Scans'
+  arxiv: '2505.02388'
+  venue: CVPR '25
+  section: scene_datasets
+  website: https://meta-scenes.github.io/
+  details: 706 scenes / 15.4K objs
+  cite_key: metascenes
+  in_paper: true
+  homepage:
+    category: Generated Scene
+    type: Auto-constructed
+    scale: 706 scenes / 15.4K objs
+    summary: Geometry, Texture, Replacements, Phys. Plaus.
+    sim: 'Yes'
+- name: MesaTask-10K
+  title: 'MesaTask: Towards Task-Driven Tabletop Scene Generation via 3D Spatial Reasoning'
+  arxiv: '2509.22281'
+  venue: NeurIPS '25
+  section: scene_datasets
+  website: https://github.com/InternRobotics/MesaTask
+  details: 10.7K tabletop scenes
+  cite_key: mesatask
+  in_paper: true
+  homepage:
+    category: Domain-oriented Scene
+    type: Task-oriented Scenes
+    scale: 10.7K tabletop scenes
+    summary: Tasks, Layouts, Relations
+    sim: Partial
+- name: MarketGen
+  title: 'MarketGen: A Scalable Simulation Platform with Auto-Generated Embodied Supermarket Environments'
+  arxiv: '2511.21161'
+  venue: arXiv '25
+  section: scene_datasets
+  website: https://xuhu0529.github.io/MarketGen
+  details: Supermarket envs / 1.1K+ assets
+  cite_key: marketgen
+  in_paper: true
+  homepage:
+    category: Domain-oriented Scene
+    type: Domain-specific Scenes
+    scale: Supermarket envs / 1.1K+ assets
+    summary: Layout Rules, Conditions, Benchmarks
+    sim: 'Yes'
+    url: https://arxiv.org/abs/2511.21161
+- name: SAGE-10K
+  title: 'SAGE: Scalable Agentic 3D Scene Generation for Embodied AI'
+  arxiv: '2602.10116'
+  venue: CVPR '26
+  section: scene_datasets
+  website: https://nvlabs.github.io/sage/
+  details: 10K scenes / 565K objs
+  cite_key: sage
+  in_paper: true
+  homepage:
+    category: Generated Scene
+    type: Agent-generated
+    scale: 10K scenes / 565K objs
+    summary: Layout, Generated Objects, Sim-ready
+    sim: 'Yes'
+- name: RLBench
+  title: 'RLBench: The Robot Learning Benchmark & Learning Environment'
+  arxiv: '1909.12271'
+  venue: RA-L '20
+  section: benchmarks
+  website: https://sites.google.com/view/rlbench
+  details: Franka Panda (CoppeliaSim) · 100 tasks / unlimited demos
+  cite_key: james2020rlbench
+  in_paper: true
+  homepage:
+    category: Sim-Based Benchmark
+    type: Sim
+    scale: 100 tasks / unlimited demos
+    summary: Motion-planner demos, multi-view RGB-D
+    robot: Franka Panda (CoppeliaSim)
+- name: CALVIN
+  title: 'CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks'
+  arxiv: '2112.03227'
+  venue: RA-L '22
+  section: benchmarks
+  website: https://github.com/mees/calvin
+  details: Franka Panda (PyBullet) · 34 tasks / 24h play data
+  cite_key: mees2022calvin
+  in_paper: true
+  homepage:
+    category: Sim-Based Benchmark
+    type: Sim
+    scale: 34 tasks / 24h play data
+    summary: Language-conditioned, long-horizon chains
+    robot: Franka Panda (PyBullet)
+- name: ManiSkill2/3
+  title: 'ManiSkill2: A Unified Benchmark for Generalizable Manipulation Skills'
+  arxiv: '2302.04659'
+  venue: ICLR '23
+  section: benchmarks
+  website: https://maniskill.ai/
+  details: Multi-robot (SAPIEN) · 20+ task families / 2K+ objects
+  cite_key: tao2024maniskill3
+  in_paper: true
+  homepage:
+    category: Sim-Based Benchmark
+    type: Sim
+    scale: 20+ task families / 2K+ objects
+    summary: GPU-parallelized, rigid & soft body
+    robot: Multi-robot (SAPIEN)
+- name: BridgeData V2
+  title: 'BridgeData V2: A Dataset for Robot Learning at Scale'
+  arxiv: '2308.12952'
+  venue: CoRL '23
+  section: demo_datasets
+  website: https://rail-berkeley.github.io/bridgedata/
+  details: WidowX 250 · 60K trajectories / 24 envs / 13 skills
+  cite_key: walke2023bridgedata
+  in_paper: true
+  homepage:
+    category: Real-World Corpus
+    type: Real
+    scale: 60K trajectories / 24 envs / 13 skills
+    summary: Low-cost hardware, language annotations
+    robot: WidowX 250
+- name: LIBERO
+  title: 'LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning'
+  arxiv: '2306.03310'
+  venue: NeurIPS '23
+  section: benchmarks
+  website: https://libero-project.github.io/
+  details: Franka Panda (robosuite) · 130 tasks / 6.5K demos
+  cite_key: liu2023libero
+  in_paper: true
+  homepage:
+    category: Sim-Based Benchmark
+    type: Sim
+    scale: 130 tasks / 6.5K demos
+    summary: Lifelong learning, controlled distribution shifts
+    robot: Franka Panda (robosuite)
+- name: MimicGen
+  title: 'MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations'
+  arxiv: '2310.17596'
+  venue: CoRL '23
+  section: demo_datasets
+  website: https://mimicgen.github.io/
+  details: Franka Panda (robosuite) · 50K+ demos from ~200 seeds
+  cite_key: mandlekar2023mimicgen
+  in_paper: true
+  homepage:
+    category: Augmentation / Scaling System
+    type: Sim
+    scale: 50K+ demos from ~200 seeds
+    summary: Trajectory augmentation, spatial adaptation
+    robot: Franka Panda (robosuite)
+- name: Open X-Embodiment
+  title: 'Open X-Embodiment: Robotic Learning Datasets and RT-X Models'
+  arxiv: '2310.08864'
+  venue: ICRA '24
+  section: demo_datasets
+  website: https://robotics-transformer-x.github.io/
+  details: 22 embodiments (60 datasets) · 1M+ trajectories / 527 skills
+  cite_key: openxembodiment2024
+  in_paper: true
+  homepage:
+    category: Real-World Corpus
+    type: Real
+    scale: 1M+ trajectories / 527 skills
+    summary: Multi-embodiment aggregation, cross-robot transfer
+    robot: 22 embodiments (60 datasets)
+- name: DROID
+  title: 'DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset'
+  arxiv: '2403.12945'
+  venue: RSS '24
+  section: demo_datasets
+  website: https://droid-dataset.github.io/
+  details: Franka Panda (18 robots) · 76K trajectories / 86 tasks
+  cite_key: khazatsky2024droid
+  in_paper: true
+  homepage:
+    category: Real-World Corpus
+    type: Real
+    scale: 76K trajectories / 86 tasks
+    summary: In-the-wild collection, 564 scenes, stereo RGB
+    robot: Franka Panda (18 robots)
+- name: RH20T
+  title: 'RH20T: A Comprehensive Robotic Dataset for Learning Diverse Skills in One-Shot'
+  arxiv: '2307.00595'
+  venue: ICRA '24
+  section: demo_datasets
+  website: https://rh20t.github.io/
+  details: 4 robots / 7 configurations · 110K+ sequences / 147 tasks
+  cite_key: fang2024rh20t
+  in_paper: true
+  homepage:
+    category: Real-World Corpus
+    type: Real
+    scale: 110K+ sequences / 147 tasks
+    summary: Multimodal (RGB-D, F/T, audio), human-robot paired
+    robot: 4 robots / 7 configurations
+- name: RoboTwin
+  title: 'RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins'
+  arxiv: '2504.13059'
+  venue: CVPR '25
+  section: benchmarks
+  website: https://robotwin-platform.github.io/
+  details: ALOHA dual-arm · 50 bimanual tasks / 731 objects
+  cite_key: mu2024robotwin
+  in_paper: true
+  homepage:
+    category: Sim-Based Benchmark
+    type: Both
+    scale: 50 bimanual tasks / 731 objects
+    summary: 3D generative digital twins, SAPIEN sim
+    robot: ALOHA dual-arm
+    url: https://arxiv.org/abs/2504.13059
+- name: RoboCasa
+  title: 'RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots'
+  arxiv: '2406.02523'
+  venue: RSS '24
+  section: benchmarks
+  website: https://robocasa.ai/
+  details: Franka (robosuite/MuJoCo) · 100K+ trajectories / 100 tasks
+  cite_key: nasiriany2024robocasa
+  in_paper: true
+  homepage:
+    category: Sim-Based Benchmark
+    type: Sim
+    scale: 100K+ trajectories / 100 tasks
+    summary: AI-generated textures & objects, kitchen domain
+    robot: Franka (robosuite/MuJoCo)
+- name: RoboTwin 2.0
+  title: 'RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation'
+  arxiv: '2506.18088'
+  venue: ICML '26
+  section: benchmarks
+  website: https://robotwin-platform.github.io/
+  details: 5 bimanual embodiments · 100K+ trajectories / 50 tasks
+  cite_key: chen2025robotwin
+  in_paper: true
+  homepage:
+    category: Sim-Based Benchmark
+    type: Both
+    scale: 100K+ trajectories / 50 tasks
+    summary: Domain randomization, MLLM task generation
+    robot: 5 bimanual embodiments
+platforms:
+- name: MuJoCo
+  type: Physics simulator
+  strengths: Stable dynamics and articulated control benchmarking
+  website: https://mujoco.org/
+- name: Isaac Sim
+  type: Robotics simulator
+  strengths: Photorealistic rendering and PhysX-based simulation
+  website: https://developer.nvidia.com/isaac/sim
+- name: Habitat
+  type: Embodied AI platform
+  strengths: Large-scale navigation and interactive embodied environments
+  website: https://aihabitat.org/
+- name: ManiSkill
+  type: Robotics benchmark and simulator
+  strengths: High-throughput embodied manipulation evaluation
+  website: https://maniskill.ai/
+- name: OmniGibson
+  type: Embodied simulation platform
+  strengths: Rich object semantics and interactive scene modeling
+  website: https://behavior.stanford.edu/omnigibson/
+- name: AI2-THOR
+  type: Embodied AI simulator
+  strengths: Procedural indoor environments for navigation and interaction
+  website: https://ai2thor.allenai.org/
