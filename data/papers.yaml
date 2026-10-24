@@ -134,7 +134,8 @@ methods:
   arxiv: '2305.16315'
   venue: NeurIPS '23
   section: articulated
-  project: https://www.cis.upenn.edu/~leijh/projects/nap
+  project: https://jiahuilei.com/projects/nap/
+  code: https://github.com/JiahuiLei/NAP
   authors: Lei, Jiahui and Deng, Congyue and Shen, William B and Guibas, Leonidas J and Daniilidis, Kostas
   cite_key: lei2023nap
   in_paper: true
@@ -173,6 +174,8 @@ methods:
   arxiv: '2406.08474'
   venue: ICLR '25
   section: articulated
+  project: https://real2code.github.io/
+  code: https://github.com/MandiZhao/real2code
   authors: Mandi, Zhao and Weng, Yijia and Bauer, Dominik and Song, Shuran
   cite_key: mandi2024real2code
   in_paper: true
@@ -212,6 +215,7 @@ methods:
   venue: CVPR '25
   section: articulated
   project: https://partrm.c7w.tech
+  code: https://github.com/GasaiYU/PartRM
   authors: Gao, Mingju and Pan, Yike and Gao, Huan-ang and Zhang, Zongzheng and Li, Wenyi and Dong, Hao and Tang, Hao and Yi, Li and Zhao, Hao
   cite_key: gao2025partrm
   in_paper: true
@@ -220,6 +224,7 @@ methods:
   arxiv: '2412.07237'
   venue: CVPR '25
   section: articulated
+  code: https://github.com/ShuYuMo2003/ArtFormer
   authors: Su, Jiayi and Feng, Youhe and Li, Zheng and Song, Jinhua and He, Yangfan and Ren, Botao and Xu, Botian
   cite_key: su2025artformer
   in_paper: true
@@ -237,6 +242,7 @@ methods:
   venue: CoRL '25
   section: articulated
   project: https://articulate-anymesh.github.io
+  code: https://github.com/UMass-Embodied-AGI/Articulate-Anymesh
   authors: Qiu, Xiaowen and Yang, Jincheng and Wang, Yian and Chen, Zhehuan and Wang, Yufei and Wang, Tsun-Hsuan and Xian, Zhou and Gan, Chuang
   cite_key: qiu2025articulate
   in_paper: true
@@ -245,6 +251,8 @@ methods:
   arxiv: '2502.07278'
   venue: TOG '26
   section: articulated
+  project: https://aditya-vora.github.io/atop/
+  code: https://github.com/aditya-vora/atop
   authors: Vora, Aditya and Nag, Sauradip and Wang, Kai and Zhang, Hao
   cite_key: vora2025articulate
   in_paper: true
@@ -326,6 +334,7 @@ methods:
   venue: CVPR '26
   section: articulated
   project: https://ruiningli.com/particulate
+  code: https://github.com/ruiningli/particulate
   authors: Li, Ruining and Yao, Yuxin and Zheng, Chuanxia and Rupprecht, Christian and Lasenby, Joan and Wu, Shangzhe and Vedaldi, Andrea
   cite_key: li2025particulate
   in_paper: true
@@ -345,6 +354,7 @@ methods:
   venue: CVPR '26
   section: articulated
   project: https://authoritywang.github.io/artllm
+  code: https://github.com/AuthorityWang/ArtLLM
   authors: Wang, Penghao and Xie, Siyuan and Yan, Hongyu and Yang, Xianghui and Huang, Jingwei and Guo, Chunchao and Gu, Jiayuan
   cite_key: wang2026artllm
   in_paper: true
@@ -353,7 +363,8 @@ methods:
   arxiv: '2512.01629'
   venue: CVPR '26
   section: articulated
-  project: https://heyumeng.com/SPARK/index.html
+  project: https://heyumeng.com/SPARK-web/
+  code: https://github.com/YumengHe/SPARK
   authors: He, Yumeng and Jiang, Ying and Lu, Jiayin and Yang, Yin and Jiang, Chenfanfu
   cite_key: he2025spark
   in_paper: true
@@ -363,6 +374,7 @@ methods:
   venue: arXiv '26
   section: articulated
   project: https://pact-project.github.io
+  code: https://github.com/Mobiuslqm/PAct
   authors: Liu, Qingming and Yao, Xinyue and Zhang, Shuyuan and Deng, Yueci and Liu, Guiliang and Liu, Zhen and Jia, Kui
   cite_key: liu2026pact
   in_paper: true
@@ -391,6 +403,8 @@ methods:
   arxiv: '2405.20510'
   venue: NeurIPS '24
   section: physical
+  project: https://gmh14.github.io/phys-comp/
+  code: https://github.com/gmh14/PhysComp
   authors: Guo, Minghao and Wang, Bohan and Ma, Pingchuan and Zhang, Tianyuan and Owens, Crystal E and Gan, Chuang and Tenenbaum, Joshua B and He, Kaiming and Matusik, Wojciech
   cite_key: guo2024physically
   in_paper: true
@@ -410,6 +424,7 @@ methods:
   venue: CVPR '24
   section: physical
   project: https://xpandora.github.io/PhysGaussian
+  code: https://github.com/XPandora/PhysGaussian
   authors: Xie, Tianyi and Zong, Zeshun and Qiu, Yuxing and Li, Xuan and Feng, Yutao and Yang, Yin and Jiang, Chenfanfu
   cite_key: xie2024physgaussian
   in_paper: true
@@ -419,6 +434,7 @@ methods:
   venue: ICRA '25
   section: physical
   project: https://red-fairy.github.io/physpart-webpage
+  code: https://github.com/Red-Fairy/physpart
   authors: Luo, Rundong and Geng, Haoran and Deng, Congyue and Li, Puhao and Wang, Zan and Jia, Baoxiong and Guibas, Leonidas and Huang, Siyuan
   cite_key: luo2025physpart
   in_paper: true
@@ -428,6 +444,7 @@ methods:
   venue: ICCV '25
   section: physical
   project: https://ruiningli.com/dso
+  code: https://github.com/RuiningLi/dso
   authors: Li, Ruining and Zheng, Chuanxia and Rupprecht, Christian and Vedaldi, Andrea
   cite_key: li2025dso
   in_paper: true
@@ -437,6 +454,7 @@ methods:
   venue: ICCV '25
   section: physical
   project: https://Gaussian-Property.github.io
+  code: https://github.com/EnVision-Research/Gaussian-Property
   authors: Xu, Xinli and Ge, Wenhang and Qiu, Dicong and Chen, ZhiFei and Yan, Dongyu and Liu, Zhuoyun and Zhao, Haoyu and Zhao, Hanfeng and Zhang, Shunsi and Liang, Junwei and others
   cite_key: xu2025gaussianproperty
   in_paper: true
@@ -475,6 +493,7 @@ methods:
   arxiv: '2511.09298'
   venue: AAAI '26
   section: physical
+  code: https://github.com/idvxlab/DensiCrafter
   authors: Dang, Shengqi and Chai, Fu and Li, Jiaxin and Yuan, Chao and Ye, Wei and Cao, Nan
   cite_key: dang2026densicrafter
   in_paper: true
@@ -514,6 +533,7 @@ methods:
   venue: 3DV '25
   section: deformable
   project: https://xuan-li.github.io/GarmentDreamerDemo
+  code: https://github.com/boqian-li/GarmentDreamer
   authors: Li, Boqian and Li, Xuan and Jiang, Ying and Xie, Tianyi and Gao, Feng and Wang, Huamin and Yang, Yin and Jiang, Chenfanfu
   cite_key: li2025garmentdreamer
   in_paper: true
@@ -561,6 +581,7 @@ methods:
   venue: NeurIPS '25
   section: pipelines
   project: https://horizonrobotics.github.io/robot_lab/embodied_gen/index.html
+  code: https://github.com/HorizonRobotics/EmbodiedGen
   authors: Wang, Xinjie and Liu, Liu and Cao, Yu and Wu, Ruiqi and Qin, Wenkang and Wang, Dehui and Sui, Wei and Su, Zhizhong
   cite_key: wang2025embodiedgen
   in_paper: true
@@ -570,6 +591,7 @@ methods:
   venue: arXiv '25
   section: pipelines
   project: https://seed.bytedance.com/en/seed3d
+  code: https://github.com/Seed3D/Seed3D
   authors: ByteDance Seed
   cite_key: seed2025seed3d
   in_paper: true
@@ -629,6 +651,7 @@ methods:
   venue: CVPR '24
   section: structure_scene
   project: https://infinigen.org
+  code: https://github.com/princeton-vl/infinigen
   authors: Raistrick, Alexander and Mei, Lingjie and Kayan, Karhan and Yan, David and Zuo, Yiming and Han, Beining and Wen, Hongyu and Parakh, Meenal and Alexandropoulos, Stamatis and Lipson, Lahav and others
   cite_key: infinigen_indoors
   in_paper: true
@@ -727,6 +750,7 @@ methods:
   venue: arXiv '26
   section: controllable_scene
   project: https://anc891203.github.io/SceneFoundry-Demo
+  code: https://github.com/anc891203/SceneFoundry
   authors: Chen, ChunTeng and Hsu, YiChen and Liu, YiWen and Sun, WeiFang and Ni, TsaiChing and Lee, ChunYi and Sun, Min and Yang, YuanFu
   cite_key: scenefoundry
   in_paper: true
@@ -764,7 +788,7 @@ methods:
   venue: NeurIPS '25
   section: agentic_scene
   project: https://polysummit.github.io/optiscene.github.io
-  code: https://github.com/YxuanAr/OptiScene
+  code: https://github.com/PolySummit/OptiScene
   authors: Yang, Yixuan and Luo, Zhen and Ding, Tongsheng and Lu, Junru and Gao, Mingqi and Yang, Jinyu and Sanchez, Victor and Zheng, Feng
   cite_key: optiscene
   in_paper: true
@@ -803,6 +827,7 @@ methods:
   venue: CVPR Find. '26
   section: agentic_scene
   project: https://3dregen.jdihlmann.com
+  code: https://github.com/cgtuebingen/3D-RE-GEN
   authors: Sautter, Tobias and Dihlmann, Jan-Niklas and Lensch, Hendrik P.A.
   cite_key: 3dregen
   in_paper: true
@@ -859,6 +884,8 @@ methods:
   arxiv: '2511.21978'
   venue: ICLR '26
   section: agentic_scene
+  project: https://simulation-intelligence.github.io/PAT3D/
+  code: https://github.com/Simulation-Intelligence/PAT3D
   authors: Lin, Guying and Huang, Kemeng and Liu, Michael and Gao, Ruihan and Chen, Hanke and Chen, Lyuhao and Lu, Beijia and Komura, Taku and Liu, Yuan and Zhu, Jun-Yan and others
   cite_key: pat3d
   in_paper: true
@@ -896,6 +923,7 @@ methods:
   arxiv: '2505.02836'
   venue: ICLR '26
   section: agentic_scene
+  project: https://research.nvidia.com/labs/cosmos-lab/scenethesis/
   authors: Ling, Lu and Lin, Chen-Hsuan and Lin, Tsung-Yi and Ding, Yifan and Zeng, Yu and Sheng, Yichen and Ge, Yunhao and Liu, Ming-Yu and Bera, Aniket and Li, Zhaoshuo
   cite_key: scenethesis
   in_paper: true
@@ -983,6 +1011,8 @@ methods:
   arxiv: '2511.17883'
   venue: arXiv '25
   section: twin_kinematic
+  project: https://jl6017.github.io/ArticFlow/
+  code: https://github.com/jl6017/ArticFlow
   authors: Lin, Jiong and Ruan, Jinchen and Lipson, Hod
   cite_key: lin2025articflow
   in_paper: true
@@ -991,6 +1021,8 @@ methods:
   arxiv: '2503.08135'
   venue: CVPR '25
   section: twin_kinematic
+  project: https://guojunfu-tech.github.io/articulatedGS-io/
+  code: https://github.com/GuoJunfu-tech/ArticulatedGaussians
   authors: Guo, Junfu and Xin, Yu and Liu, Gaoyi and Xu, Kai and Liu, Ligang and Hu, Ruizhen
   cite_key: guo2025articulatedgs
   in_paper: true
@@ -1049,6 +1081,7 @@ methods:
   venue: CVPR '26
   section: twin_physics
   project: https://sites.google.com/view/reartgs2/home
+  code: https://github.com/wd-ustc-cs/REArtGS2
   authors: Wu, Di and Liu, Liu and Huang, Anran and Liu, Yuyan and Yu, Qiaojun and Liu, Shaofan and Song, Liangtu and Lu, Cewu
   cite_key: wu2025reartgs++
   in_paper: true
@@ -1069,6 +1102,8 @@ methods:
   arxiv: '2405.04378'
   venue: CoRL '24
   section: augmentation
+  project: https://splatmover.github.io/
+  code: https://github.com/StanfordMSL/Splat-MOVER
   authors: Shorinwa, Ola and Tucker, Johnathan and Smith, Aliyah and Swann, Aiden and Chen, Timothy and Firoozi, Roya and Kennedy III, Monroe and Schwager, Mac
   cite_key: shorinwa2024splat
   in_paper: true
@@ -1077,6 +1112,8 @@ methods:
   arxiv: '2407.15815'
   venue: CoRL '24
   section: augmentation
+  project: https://gemcollector.github.io/maniwhere/
+  code: https://github.com/gemcollector/maniwhere
   authors: Yuan, Zhecheng and Wei, Tianming and Cheng, Shuiqi and Zhang, Gu and Chen, Yuanpei and Xu, Huazhe
   cite_key: yuan2024learning
   in_paper: true
@@ -1113,6 +1150,8 @@ methods:
   arxiv: '2505.23171'
   venue: CVPR Find. '26
   section: augmentation
+  project: https://horizonrobotics.github.io/robot_lab/robotransfer/
+  code: https://github.com/HorizonRobotics/RoboTransfer
   authors: Liu, Liu and Wang, Xiaofeng and Zhao, Guosheng and Li, Keyu and Qin, Wenkang and Zhu, Jiagang and Qiu, Jiaxiong and Zhu, Zheng and Huang, Guan and Su, Zhizhong
   cite_key: liu2025robotransfer
   in_paper: true
@@ -1121,7 +1160,8 @@ methods:
   arxiv: '2506.14135'
   venue: ICRA '26
   section: augmentation
-  project: http://chaiying1.github.io/GAF.github.io/project_page
+  project: https://chaiying1.github.io/projects/GAF/
+  code: https://github.com/ChaiYing1/GAF
   authors: Chai, Ying and Deng, Litao and Shao, Ruizhi and Zhang, Jiajun and Lv, Kangchen and Xing, Liangjun and Li, Xiang and Zhang, Hongwen and Liu, Yebin
   cite_key: gaf
   in_paper: true
@@ -1130,6 +1170,7 @@ methods:
   arxiv: '2509.22578'
   venue: arXiv '25
   section: augmentation
+  project: https://egodemogen.github.io/
   authors: Xu, Yuan and Yang, Jiabing and Wang, Xiaofeng and Chen, Yixiang and Zhu, Zheng and Fang, Bowen and Huang, Guan and Chen, Xinze and Ye, Yun and Zhang, Qiang and others
   cite_key: xu2025egodemogen
   in_paper: true
@@ -1188,6 +1229,7 @@ methods:
   venue: CoRL '25
   section: demo_sim
   project: https://real2render2real.com
+  code: https://github.com/uynitsuj/real2render2real
   authors: Yu, Justin and Fu, Letian and Huang, Huang and El-Refai, Karim and Ambrus, Rares Andrei and Cheng, Richard and Irshad, Muhammad Zubair and Goldberg, Ken
   cite_key: r2r2r
   in_paper: true
@@ -1196,6 +1238,7 @@ methods:
   arxiv: '2509.05314'
   venue: AAAI '26
   section: demo_sim
+  code: https://github.com/myendless1/ManipDreamer3D
   authors: Li, Ying and Wei, Xiaobao and Chi, Xiaowei and Li, Yuming and Zhao, Zhongyu and Wang, Hao and Ma, Ningning and Lu, Ming and Han, Sirui
   cite_key: manipdreamer3d
   in_paper: true
@@ -1215,6 +1258,7 @@ methods:
   venue: ICRA '26
   section: demo_wm
   project: https://junjieye.com/AnchorDream
+  code: https://github.com/Jay-Ye/AnchorDream
   authors: Ye, Junjie and Xue, Rong and Van Hoorick, Basile and Tokmakov, Pavel and Irshad, Muhammad Zubair and Wang, Yue and Guizilini, Vitor
   cite_key: anchordream
   in_paper: true
@@ -1233,6 +1277,7 @@ methods:
   arxiv: '2512.14217'
   venue: ICRA '26
   section: demo_wm
+  project: https://baaiy0610.github.io/draw2act/
   authors: Bai, Yang and Yang, Liudi and Eskandar, George and Shen, Fengyi and Altillawi, Mohammad and Liu, Ziyuan and Kutyniok, Gitta
   cite_key: draw2act
   in_paper: true
@@ -1241,6 +1286,8 @@ methods:
   arxiv: '2512.03044'
   venue: arXiv '25
   section: demo_wm
+  project: https://video2act.github.io/
+  code: https://github.com/jiayueru/Video2Act
   authors: Jia, Yueru and Liu, Jiaming and Liu, Shengbang and Zhou, Rui and Yu, Wanhe and Yan, Yuyang and Chi, Xiaowei and Guo, Yandong and Shi, Boxin and Zhang, Shanghang
   cite_key: video2act
   in_paper: true
@@ -1278,6 +1325,7 @@ methods:
   venue: ICCV '23
   section: backbones
   project: https://zero123.cs.columbia.edu/
+  code: https://github.com/cvlab-columbia/zero123
   authors: Liu, Ruoshi and Wu, Rundi and Hoorick, Basile Van and Tokmakov, Pavel and Zakharov, Sergey and Vondrick, Carl
   in_paper: false
 - name: LRM
@@ -1285,6 +1333,7 @@ methods:
   arxiv: '2311.04400'
   venue: ICLR '24
   section: backbones
+  project: https://yiconghong.me/LRM
   authors: Hong, Yicong and Zhang, Kai and Gu, Jiuxiang and Bi, Sai and Zhou, Yang and Liu, Difan and Liu, Feng and Sunkavalli, Kalyan and Bui, Trung and Tan, Hao
   in_paper: false
 - name: CLAY
@@ -1293,6 +1342,7 @@ methods:
   venue: TOG (SIG. '24)
   section: backbones
   project: https://sites.google.com/view/clay-3dlm
+  code: https://github.com/CLAY-3D/OpenCLAY
   authors: Zhang, Longwen and Wang, Ziyu and Zhang, Qixuan and Qiu, Qiwei and Pang, Anqi and Jiang, Haoran and Yang, Wei and Xu, Lan and Yu, Jingyi
   in_paper: false
 - name: Hunyuan3D
@@ -1300,6 +1350,7 @@ methods:
   arxiv: '2501.12202'
   venue: arXiv '25
   section: backbones
+  project: https://3d-models.hunyuan.tencent.com/
   code: https://github.com/Tencent/Hunyuan3D-2
   authors: Zhao, Zibo and Lai, Zeqiang and Lin, Qingxiang and Zhao, Yunfei and Liu, Haolin and Yang, Shuhui and Feng, Yifei and Yang, Mingxin and Zhang, Sheng and Yang, Xianghui and Shi, Huiwen and Liu, Sicong and Wu, Junta and Lian, Yihang and Yang, Fan and Tang, Ruining and He, Zebin and Wang, Xinzhou and Liu, Jian and Zuo, Xuhui and Chen, Zhuo and Lei, Biwen and Weng, Haohan and Xu, Jing and Zhu, Yiling and Liu, Xinhai and Xu, Lixin and Hu, Changrong and Yang, Shaoxiong and Zhang, Song and Liu, Yang and Huang, Tianyu and Wang, Lifu and Zhang, Jihong and Chen, Meng and Dong, Liang and Jia, Yiwen and Cai, Yulin and Yu, Jiaao and Tang, Yixuan and Zhang, Hao and Ye, Zheng and He, Peng and Wu, Runzhou and Zhang, Chao and Tan, Yonghao and Xiao, Jie and Tao, Yangyu and Zhu, Jianchen and Xue, Jinbao and Liu, Kai and Zhao, Chongqing and Wu, Xinming and Hu, Zhichao and Qin, Lei and Peng, Jianbing and Li, Zhan and Chen, Minghui and Zhang, Xipeng and Niu, Lin and Wang, Paige and Wang, Yingkai and
     Kuang, Haozhao and Fan, Zhongyi and Zheng, Xu and Zhuang, Weihao and He, YingPing and Liu, Tian and Yang, Yong and Wang, Di and Liu, Yuhong and Jiang, Jie and Huang, Jingwei and Guo, Chunchao
@@ -1326,6 +1377,7 @@ methods:
   venue: NeurIPS '25
   section: backbones
   project: https://wgsxm.github.io/projects/partcrafter/
+  code: https://github.com/wgsxm/PartCrafter
   authors: Lin, Yuchen and Lin, Chenguo and Pan, Panwang and Yan, Honglei and Feng, Yiqiang and Mu, Yadong and Fragkiadaki, Katerina
   in_paper: false
 - name: OmniPart
@@ -1334,6 +1386,7 @@ methods:
   venue: SIG. Asia '25
   section: backbones
   project: https://omnipart.github.io/
+  code: https://github.com/HKU-MMLab/OmniPart
   authors: Yang, Yunhan and Zhou, Yufan and Guo, Yuan-Chen and Zou, Zi-Xin and Huang, Yukun and Liu, Ying-Tian and Xu, Hao and Liang, Ding and Cao, Yan-Pei and Liu, Xihui
   in_paper: false
 - name: DIPO
@@ -1341,6 +1394,8 @@ methods:
   arxiv: '2505.20460'
   venue: NeurIPS '25
   section: twin_kinematic
+  project: https://rq-wu.github.io/projects/DIPO/index.html
+  code: https://github.com/RQ-Wu/DIPO
   authors: Wu, Ruiqi and Wang, Xinjie and Liu, Liu and Guo, Chunle and Qiu, Jiaxiong and Li, Chongyi and Huang, Lichao and Su, Zhizhong and Cheng, Ming-Ming
   in_paper: false
 - name: FreeArt3D
@@ -1365,6 +1420,8 @@ methods:
   arxiv: '2603.23386'
   venue: SIGGRAPH '26
   section: articulated
+  project: https://simart-mllm.github.io/
+  code: https://github.com/ByteDance-Seed/SimArt
   authors: Zhang, Chuanrui and Qin, Minghan and Wang, Yuang and Xie, Baifeng and Li, Hang and Wang, Ziwei
   in_paper: false
 - name: MotionAnymesh
@@ -1372,6 +1429,7 @@ methods:
   arxiv: '2603.12936'
   venue: ECCV '26
   section: articulated
+  project: https://xwb0117.github.io/Motionanymesh/
   authors: Xu, WenBo and Liu, Liu and Zhang, Li and Guo, Dan and Liu, RuoNan
   in_paper: false
 - name: Articraft
@@ -1380,6 +1438,7 @@ methods:
   venue: NeurIPS '26
   section: articulated
   project: https://articraft3d.github.io/
+  code: https://github.com/articraftresearch/Articraft
   authors: Zhou, Matt and Li, Ruining and Lyu, Xiaoyang and Song, Zhaomou and Huang, Zhening and Zheng, Chuanxia and Rupprecht, Christian and Vedaldi, Andrea and Wu, Shangzhe
   in_paper: false
 - name: LAM
@@ -1397,6 +1456,7 @@ methods:
   venue: NeurIPS '26
   section: articulated
   project: https://instruct-particulate.github.io/
+  code: https://huggingface.co/spaces/rayli/instruct-particulate
   authors: Li, Ruining and Yao, Yuxin and Zhou, Matt and Zheng, Chuanxia and Rupprecht, Christian and Lasenby, Joan and Wu, Shangzhe and Vedaldi, Andrea
   in_paper: false
 - name: Artic-O
@@ -1404,6 +1464,7 @@ methods:
   arxiv: '2606.21938'
   venue: SIG. Asia '26
   section: twin_kinematic
+  project: https://wxyxixixi.github.io/Artic-O/
   code: https://github.com/Wxyxixixi/Artic-O
   authors: Wang, Xuyang and Li, Zhenyu and Ding, Jian and Slim, Habib and Wonka, Peter and Li, Hongdong and Elhoseiny, Mohamed
   in_paper: false
@@ -1412,6 +1473,7 @@ methods:
   arxiv: '2607.02045'
   venue: ECCV '26
   section: articulated
+  code: https://github.com/Wentap123/PWM-ArtGen
   authors: Zheng, Wentao and Wu, Ancong
   in_paper: false
 - name: Artisan
@@ -1420,6 +1482,7 @@ methods:
   venue: arXiv '26
   section: articulated
   project: https://physicalvision.github.io/artisan/
+  code: https://github.com/physicalvision/Artisan
   authors: Cai, Xudong and Zhu, Ruijie and Shang, Haoliang and Li, Ruining and Pollefeys, Marc and Wu, Shangzhe and Vedaldi, Andrea and Zheng, Chuanxia
   in_paper: false
 - name: VisionLaw
@@ -1435,6 +1498,8 @@ methods:
   arxiv: '2604.07882'
   venue: ECCV '26
   section: twin_physics
+  project: https://chuanshuogushi.github.io/ReconPhys/
+  code: https://github.com/chuanshuogushi/ReconPhys
   authors: Wang, Boyuan and Wang, Xiaofeng and Li, Yongkang and Zhu, Zheng and Chang, Yifan and Ye, Angen and Zhao, Guosheng and Ni, Chaojun and Huang, Guan and Ren, Yijie and Duan, Yueqi and Wang, Xingang
   in_paper: false
 - name: JODA
@@ -1450,6 +1515,7 @@ methods:
   venue: arXiv '26
   section: physical
   project: https://physx-omni.github.io/
+  code: https://github.com/ziangcao0312/PhysX-Omni
   authors: Cao, Ziang and Liu, Yinghao and Li, Haitian and Yao, Runmao and Hong, Fangzhou and Chen, Zhaoxi and Pan, Liang and Liu, Ziwei
   in_paper: false
 - name: PhysForge
@@ -1458,6 +1524,7 @@ methods:
   venue: ICML '26
   section: physical
   project: https://hku-mmlab.github.io/PhysForge/
+  code: https://github.com/HKU-MMLab/PhysForge
   authors: Yang, Yunhan and Wang, Chunshi and Ye, Junliang and Li, Yang and Chen, Zanxin and Huang, Zehuan and Mu, Yao and Chen, Zhuo and Guo, Chunchao and Liu, Xihui
   in_paper: false
 - name: AdaVoMP
@@ -1481,6 +1548,7 @@ methods:
   arxiv: '2607.13586'
   venue: arXiv '26
   section: physical
+  code: https://github.com/breezexian/UniPhysGen
   authors: Li, Xian and Wei, Rong and Yang, Lujie and Huang, Haolin and Fang, Junyuan and Tang, Siliang and Xiao, Jun and Tang, Rui and Li, Juncheng
   in_paper: false
 - name: S4R
@@ -1489,6 +1557,7 @@ methods:
   venue: SIG. Asia '26
   section: tools
   project: https://frank-zy-dou.github.io/projects/S4R/index.html
+  code: https://github.com/Frank-ZY-Dou/Dynamics-Modeling
   authors: Dou, Zhiyang and Zhao, Ang and Peng, Chen and Guo, Minghao and Wu, Haixu and Lin, Cheng and Liu, Yuan and Yao, Junfeng and Guo, Xiaohu and Wang, Wenping and Matusik, Wojciech
   in_paper: false
 - name: I2CD
@@ -1504,6 +1573,7 @@ methods:
   venue: ECCV '26
   section: physical
   project: https://hb-pencil-zero.github.io/AutoPhyX/
+  code: https://github.com/HB-pencil-zero/AutoPhyX
   authors: Huang, Bei and Chen, Yixin and Zha, Hongbin and Pei, Yuru and Huang, Siyuan
   in_paper: false
 - name: GarmageNet
@@ -1511,6 +1581,8 @@ methods:
   arxiv: '2504.01483'
   venue: ToG (SIG. Asia '25)
   section: deformable
+  project: https://style3d.github.io/garmagenet/
+  code: https://github.com/Style3D/garmagenet-impl
   authors: Li, Siran and Liu, Ruiyang and Liu, Chen and Wang, Zhendong and He, Gaofeng and Li, Yong-Lu and Jin, Xiaogang and Wang, Huamin
   in_paper: false
 - name: PGND
@@ -1519,6 +1591,7 @@ methods:
   venue: arXiv '25
   section: world_models
   project: https://kywind.github.io/pgnd
+  code: https://github.com/kywind/pgnd
   authors: Zhang, Kaifeng and Li, Baoyu and Hauser, Kris and Li, Yunzhu
   in_paper: false
 - name: ReWeaver
@@ -1526,6 +1599,8 @@ methods:
   arxiv: '2601.16672'
   venue: CVPR '26
   section: deformable
+  project: https://sii-liming.github.io/ReWeaver/
+  code: https://github.com/SII-LiMing/ReWeaver-Code
   authors: Li, Ming and Shan, Hui and Zheng, Kai and Shen, Chentao and Liu, Siyu and Fu, Yanwei and Chen, Zhen and Huang, Xiangru
   in_paper: false
 - name: DressWild
@@ -1533,6 +1608,7 @@ methods:
   arxiv: '2602.16502'
   venue: NeurIPS '26
   section: deformable
+  project: https://dresswild.github.io/
   authors: Tao, Zeng and Jiang, Ying and Chen, Yunuo and Xie, Tianyi and Wang, Huamin and Wu, Yingnian and Yang, Yin and Kumar, Abishek Sampath and Tashiro, Kenji and Jiang, Chenfanfu
   in_paper: false
 - name: DeformMaster
@@ -1541,6 +1617,7 @@ methods:
   venue: NeurIPS '26
   section: twin_physics
   project: https://can-lee.github.io/deformmaster-web/
+  code: https://github.com/CAN-Lee/DeformMaster
   authors: Li, Can and Li, Zhoujian and Li, Ren and Gu, Jie and Lei, Lei and Chen, Jingmin and Sun, Lei
   in_paper: false
 - name: DeformSmith
@@ -1549,6 +1626,7 @@ methods:
   venue: arXiv '26
   section: deformable
   project: https://can-lee.github.io/deformsmith-web/
+  code: https://github.com/CAN-Lee/DeformSmith
   authors: Li, Can and Gu, Jie and Deng, Zishun and Chen, Jingmin and Sun, Lei
   in_paper: false
 - name: DressAgent
@@ -1556,6 +1634,7 @@ methods:
   arxiv: '2610.15582'
   venue: arXiv '26
   section: deformable
+  project: https://nxjiang-jnx.github.io/dress-agent/
   authors: Jiang, Nanxiang and Chen, Yunuo and Tao, Zeng and Li, Zizhang and Guo, Qi and Wu, Jiajun and Yang, Yin and Jiang, Chenfanfu
   in_paper: false
 - name: NGFF
@@ -1563,6 +1642,8 @@ methods:
   arxiv: '2602.00148'
   venue: ICLR '26
   section: world_models
+  project: https://neuralgaussianforcefield.github.io/
+  code: https://github.com/lishiqianhugh/NeuralGaussianForceField
   authors: Li, Shiqian and Shen, Ruihong and Ni, Junfeng and Pan, Chang and Zhang, Chi and Zhu, Yixin
   in_paper: false
 - name: LaGSplat
@@ -1571,6 +1652,7 @@ methods:
   venue: arXiv '26
   section: twin_physics
   project: https://louenpottier.github.io/lagsplat.html
+  code: https://github.com/LouenPottier/LaGSplat
   authors: Pottier, Louen
   in_paper: false
 - name: Seed3D 2.0
@@ -1594,6 +1676,7 @@ methods:
   arxiv: '2606.17446'
   venue: arXiv '26
   section: pipelines
+  project: https://tourmaline-caramel-169490.netlify.app/
   authors: Lu, Haoran and Shen, Mutian and Yu, Shuyang and Xiao, Yu and Liu, Songling and Zhang, Jianshu and Wu, Shang and Chen, Yue and Ye, Guo and Wang, Jiayi and Wang, Zhaoran and Liu, Han
   in_paper: false
 - name: EmbodiedGen V2
@@ -1602,6 +1685,7 @@ methods:
   venue: arXiv '26
   section: pipelines
   project: https://horizonrobotics.github.io/EmbodiedGen/
+  code: https://github.com/HorizonRobotics/EmbodiedGen
   authors: Wang, Xinjie and Liu, Liu and Ding, Taojun and Choi, Andrew and Huang, Chaodong and Zhao, Mengao and Li, Ziang and Jiang, Jackson and Yu, Chunlei and Liu, Shengxiang and Xu, Wei and Su, Zhizhong
   in_paper: false
 - name: MatchMaker
@@ -1609,6 +1693,8 @@ methods:
   arxiv: '2503.05887'
   venue: ICRA '25
   section: physical
+  project: https://wangyian-me.github.io/MatchMaker/
+  code: https://github.com/wangyian-me/MatchMaker_Code/tree/match_maker
   authors: Wang, Yian and Tang, Bingjie and Gan, Chuang and Fox, Dieter and Mo, Kaichun and Narang, Yashraj and Akinola, Iretiayo
   in_paper: false
 - name: Infinigen-Articulated
@@ -1616,6 +1702,8 @@ methods:
   arxiv: '2505.10755'
   venue: CoRL '26
   section: articulated
+  project: https://princeton-vl.github.io/infinigen-articulated/
+  code: https://github.com/princeton-vl/infinigen
   authors: Joshi, Abhishek and Han, Beining and Nugent, Jack and Saez-Diez, Max Gonzalez and Zuo, Yiming and Liu, Jonathan and Wen, Hongyu and Alexandropoulos, Stamatis and Kayan, Karhan and Calveri, Anna and Sun, Tao and Liu, Gaowen and Shao, Yi and Raistrick, Alexander and Deng, Jia
   in_paper: false
 - name: RobotSmith
@@ -1623,6 +1711,8 @@ methods:
   arxiv: '2506.14763'
   venue: arXiv '25
   section: physical
+  project: https://umass-embodied-agi.github.io/RobotSmith/
+  code: https://github.com/UMass-Embodied-AGI/RobotSmith
   authors: Lin, Chunru and Yuan, Haotian and Wang, Yian and Qiu, Xiaowen and Wang, Tsun-Hsuan and Guo, Minghao and Wang, Bohan and Narang, Yashraj and Fox, Dieter and Gan, Chuang
   in_paper: false
 - name: ProcFunc
@@ -1630,6 +1720,7 @@ methods:
   arxiv: '2604.26943'
   venue: arXiv '26
   section: structure_scene
+  project: https://procfunc.readthedocs.io
   code: https://github.com/princeton-vl/procfunc
   authors: Raistrick, Alexander and Kayan, Karhan and Nugent, Jack and Yan, David and Mei, Lingjie and Parakh, Meenal and Wen, Hongyu and Li, Dylan and Zuo, Yiming and Liang, Erich and Deng, Jia
   in_paper: false
@@ -1655,6 +1746,7 @@ methods:
   venue: CVPR '26
   section: structure_scene
   project: https://fenghora.github.io/LaviGen-Page/
+  code: https://github.com/fenghora/LaviGen
   authors: Feng, Haoran and Niu, Yifan and Huang, Zehuan and Sun, Yang-Tian and Peng, Yuxin and Sheng, Lu
   in_paper: false
 - name: Pair2Scene
@@ -1662,6 +1754,7 @@ methods:
   arxiv: '2604.11808'
   venue: ICML '26
   section: structure_scene
+  project: https://rxjfighting.github.io/Pair2Scene-Page/
   authors: Ran, Xingjian and Zhang, Shujie and Zhong, Weipeng and Luo, Li and Dai, Bo
   in_paper: false
 - name: HomeWorld
@@ -1669,6 +1762,8 @@ methods:
   arxiv: '2606.06390'
   venue: ECCV '26
   section: agentic_scene
+  project: https://kairos-homeworld.github.io/
+  code: https://github.com/Kairos-HomeWorld/HomeWorld
   authors: Li, Wenbo and Ju, Xiaoliang and Qin, Zipeng and Fang, Rongyao and Li, Hongsheng
   in_paper: false
 - name: Edit-As-Act
@@ -1676,6 +1771,8 @@ methods:
   arxiv: '2603.17583'
   venue: CVPR '26
   section: controllable_scene
+  project: https://seongraenoh.github.io/edit-as-act/
+  code: https://github.com/SeongRaeNoh/Edit-As-Act
   authors: Noh, Seongrae and Seo, SeungWon and Park, Gyeong-Moon and Kang, HyeongYeop
   in_paper: false
 - name: ZoneMaestro
@@ -1691,6 +1788,7 @@ methods:
   venue: NeurIPS '26
   section: twin_scene
   project: https://snuvclab.github.io/SimuScene/
+  code: https://github.com/snuvclab/SimuScene
   authors: Lee, Inhee and Baik, Sangwon and Kim, Sungjoo and Kim, Hyeonwoo and Cha, Hyunsoo and Joo, Hanbyul
   in_paper: false
 - name: 4DSynth
@@ -1698,6 +1796,8 @@ methods:
   arxiv: '2608.26947'
   venue: arXiv '26
   section: controllable_scene
+  project: https://qzephyr.github.io/4DSynth/
+  code: https://github.com/QZepHyr/4DSynth
   authors: Qi, Zehao and Luo, Haochen and Bian, Jia-Wang and Ma, Zeyu and Sun, Shuyang
   in_paper: false
 - name: GALA
@@ -1713,6 +1813,7 @@ methods:
   arxiv: '2511.04769'
   venue: ICLR '25
   section: controllable_scene
+  project: https://regen-sim.github.io/
   authors: Nguyen, Phat and Wang, Tsun-Hsuan and Hong, Zhang-Wei and Aasi, Erfan and Silva, Andrew and Rosman, Guy and Karaman, Sertac and Rus, Daniela
   in_paper: false
 - name: MANSION
@@ -1720,6 +1821,8 @@ methods:
   arxiv: '2603.11554'
   venue: CVPR '26
   section: agentic_scene
+  project: https://agibotgeneral.github.io/mansion-site/
+  code: https://github.com/AgibotGeneral/MANSION
   authors: Che, Lirong and Wen, Shuo and Huang, Shan and Wang, Chuang and Yang, Yuzhe and Dudek, Gregory and Wang, Xueqian and Su, Jian
   in_paper: false
 - name: STABLE
@@ -1727,6 +1830,7 @@ methods:
   arxiv: '2605.16137'
   venue: ICML '26
   section: agentic_scene
+  project: https://lan555.github.io/stable/
   authors: Luo, Zhen and Yang, Yixuan and Xu, Xudong and Hao, Jinkun and Lyu, Zhaoyang and Zheng, Feng and Pang, Jiangmiao and Fu, Yanwei
   in_paper: false
 - name: SceneCode
@@ -1734,6 +1838,8 @@ methods:
   arxiv: '2605.19587'
   venue: arXiv '26
   section: agentic_scene
+  project: https://scene-code.github.io/
+  code: https://github.com/wangpuyi/SceneCode
   authors: Wang, Puyi and Wang, Yuhao and Li, Linjie and Yang, Zhengyuan and Lin, Kevin Qinghong and Li, Yangguang and Cheng, Yu
   in_paper: false
 - name: SimWorld Studio
@@ -1741,6 +1847,7 @@ methods:
   arxiv: '2605.09423'
   venue: NeurIPS '26
   section: agentic_scene
+  project: https://simworld.org/simworld-studio/
   authors: Kang, Haoqiang and Ye, Xiaokang and Liu, Yuhan and Mantri, Siddhant Hitesh and Mao, Lingjun and Fleming, James and Regmi, Drishti and Qin, Lianhui
   in_paper: false
 - name: GIF
@@ -1748,6 +1855,7 @@ methods:
   arxiv: '2609.05927'
   venue: CoRL '26
   section: agentic_scene
+  project: https://fufumeichi.github.io/gif-project-page/
   authors: Xu, Long and Zhang, Zhiqi and Yan, Mi and Deng, Shengliang and Xia, Chong and Dong, Mingyu and Chen, Jiayi and Lyu, Jiangran and Gao, Fei and Zhang, Zhizheng and Wang, He
   in_paper: false
 - name: ArticuTable
@@ -1755,6 +1863,8 @@ methods:
   arxiv: '2610.05249'
   venue: arXiv '26
   section: twin_scene
+  project: https://johnnyboy1013.github.io/articutable-project/
+  code: https://github.com/bryceyin13/articutable-code
   authors: Lv, Kai and Yin, Yibo and Guo, Lijun and Fan, Heng and Zhang, Kaihao and Dong, Xingping
   in_paper: false
 - name: NeoWorld-3
@@ -1762,6 +1872,8 @@ methods:
   arxiv: '2610.27690'
   venue: arXiv '26
   section: twin_scene
+  project: https://neoworldproject.github.io/Studio/
+  code: https://github.com/NeoWorldProject/NeoWorldStudio
   authors: Soong, Eachen and Niu, Zijian and Xu, Haoran and Dong, Yihong and Wang, Yunbo and Yang, Xiaokang
   in_paper: false
   related:
@@ -1772,6 +1884,7 @@ methods:
   arxiv: '2511.16825'
   venue: CVPR '26
   section: generative_worlds
+  project: https://www.meta.com/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/
   authors: Wang, Dilin and Jung, Hyunyoung and Monnier, Tom and Sohn, Kihyuk and Zou, Chuhang and Xiang, Xiaoyu and Yeh, Yu-Ying and Liu, Di and Huang, Zixuan and Nguyen-Phuoc, Thu and Fan, Yuchen and Oprea, Sergiu and Wang, Ziyan and Shapovalov, Roman and Sarafianos, Nikolaos and Groueix, Thibault and Toisoul, Antoine and Dhar, Prithviraj and Chu, Xiao and Chen, Minghao and Park, Geon Yeong and Gupta, Mahima and Azziz, Yassir and Ranjan, Rakesh and Vedaldi, Andrea
   in_paper: false
 - name: Marble
@@ -1787,6 +1900,8 @@ methods:
   arxiv: '2601.03782'
   venue: CVPR '26
   section: world_models
+  project: https://point-world.github.io/
+  code: https://github.com/NVlabs/PointWorld
   authors: Huang, Wenlong and Chao, Yu-Wei and Mousavian, Arsalan and Liu, Ming-Yu and Fox, Dieter and Mo, Kaichun and Fei-Fei, Li
   in_paper: false
 - name: PerpetualWonder
@@ -1795,6 +1910,7 @@ methods:
   venue: CVPR '26
   section: world_models
   project: https://johnzhan2023.github.io/PerpetualWonder/
+  code: https://github.com/JohnZhan2023/PerpetualWonder
   authors: Zhan, Jiahao and Li, Zizhang and Yu, Hong-Xing and Wu, Jiajun
   in_paper: false
   related:
@@ -1808,6 +1924,7 @@ methods:
   venue: arXiv '26
   section: world_models
   project: https://mutianxu.github.io/Kinema4D-project-page/
+  code: https://github.com/mutianxu/Kinema4D
   authors: Xu, Mutian and Zhang, Tianbao and Liu, Tianqi and Chen, Zhaoxi and Han, Xiaoguang and Liu, Ziwei
   in_paper: false
 - name: EgoSim
@@ -1815,6 +1932,8 @@ methods:
   arxiv: '2604.01001'
   venue: ECCV '26
   section: world_models
+  project: https://egosimulator.github.io/
+  code: https://github.com/jinkun-hao/EgoSim
   authors: Hao, Jinkun and Jia, Mingda and Wang, Ruiyan and Zhu, Hongrui and Cao, Jiafei and Liu, Xihui and Yi, Ran and Ma, Lizhuang and Pang, Jiangmiao and Xu, Xudong
   in_paper: false
 - name: HY-World 2.0
@@ -1834,7 +1953,8 @@ methods:
   arxiv: '2604.13036'
   venue: arXiv '26
   section: generative_worlds
-  project: https://research.nvidia.com/labs/sil/projects/lyra2/
+  project: https://nv-tlabs.github.io/Project-Lyra/
+  code: https://github.com/nv-tlabs/lyra/tree/main/Lyra-2
   authors: Shen, Tianchang and Bahmani, Sherwin and He, Kai and Srinivasan, Sangeetha Grama and Cao, Tianshi and Ren, Jiawei and Li, Ruilong and Wang, Zian and Sharp, Nicholas and Gojcic, Zan and Fidler, Sanja and Huang, Jiahui and Ling, Huan and Gao, Jun and Ren, Xuanchi
   in_paper: false
   related:
@@ -1846,6 +1966,7 @@ methods:
   venue: NeurIPS '26
   section: generative_worlds
   project: https://sjtu-deepvisionlab.github.io/WorldAct
+  code: https://github.com/SJTU-DeepVisionLab/WorldAct
   authors: Hu, Jichen and Guo, Jiawei and Cen, Jiazhong and Yang, Chen and Li, Sikuang and Shen, Wei
   in_paper: false
 - name: Mem-World
@@ -1861,6 +1982,7 @@ methods:
   venue: arXiv '26
   section: world_models
   project: https://pointzero-wm.github.io/
+  code: https://github.com/Duisterhof/pointzero
   authors: Duisterhof, Bardienus P. and Zhang, Kaifeng and Hung, Adam and Wen, Bowen and Birchfield, Stan and Li, Yunzhu and Ramanan, Deva and Ichnowski, Jeffrey
   in_paper: false
 - name: DepthWorld
@@ -1869,6 +1991,7 @@ methods:
   venue: CoRL '26
   section: world_models
   project: https://www.jaibardhan.com/depthworld
+  code: https://github.com/Jai2500/depthworld
   authors: Bardhan, Jai and Sivic, Josef and Petrik, Vladimir
   in_paper: false
 - name: Code2Worlds-2
@@ -1888,6 +2011,8 @@ methods:
   arxiv: '2502.08645'
   venue: ICRA '26
   section: twin_scene
+  project: https://re3sim.github.io/
+  code: https://github.com/InternRobotics/Re3Sim
   authors: Han, Xiaoshen and Yu, Junqiu and Liu, Minghuan and Chen, Yilun and Lyu, Xiaoyang and Tian, Yang and Wang, Bolun and Zhang, Weinan and Pang, Jiangmiao
   in_paper: false
 - name: PIN-WM
@@ -1895,6 +2020,8 @@ methods:
   arxiv: '2504.16693'
   venue: RSS '25
   section: twin_physics
+  project: https://pinwm.github.io/
+  code: https://github.com/XuAdventurer/PIN-WM
   authors: Li, Wenxuan and Zhao, Hang and Yu, Zhiyuan and Du, Yu and Zou, Qin and Hu, Ruizhen and Xu, Kai
   in_paper: false
 - name: EmbodieDreamer
@@ -1903,6 +2030,7 @@ methods:
   venue: arXiv '25
   section: twin_physics
   project: https://embodiedreamer.github.io/
+  code: https://github.com/GigaAI-research/EmbodieDreamer
   authors: Wang, Boyuan and Meng, Xinpan and Wang, Xiaofeng and Zhu, Zheng and Ye, Angen and Wang, Yang and Yang, Zhiqin and Ni, Chaojun and Huang, Guan and Wang, Xingang
   in_paper: false
 - name: HoloScene
@@ -1911,6 +2039,7 @@ methods:
   venue: NeurIPS '25
   section: twin_scene
   project: https://xiahongchi.github.io/HoloScene
+  code: https://github.com/xiahongchi/HoloScene
   authors: Xia, Hongchi and Lin, Chih-Hao and Hsu, Hao-Yu and Leboutet, Quentin and Gao, Katelyn and Paulitsch, Michael and Ummenhofer, Benjamin and Wang, Shenlong
   in_paper: false
 - name: REACT3D
@@ -1918,6 +2047,8 @@ methods:
   arxiv: '2510.11340'
   venue: RA-L '26
   section: twin_kinematic
+  project: https://react3d.github.io/
+  code: https://github.com/troyehuang/REACT3D
   authors: Huang, Zhao and Sun, Boyang and Delitzas, Alexandros and Chen, Jiaqi and Pollefeys, Marc
   in_paper: false
 - name: SAGE-3D
@@ -1926,6 +2057,7 @@ methods:
   venue: ICLR '26
   section: twin_scene
   project: https://sage-3d.github.io/
+  code: https://github.com/Galery23/SAGE-3D_Official
   authors: Miao, Bingchen and Wei, Rong and Ge, Zhiqi and sun, Xiaoquan and Gao, Shiqi and Zhu, Jingzhe and Wang, Renhan and Tang, Siliang and Xiao, Jun and Tang, Rui and Li, Juncheng
   in_paper: false
 - name: PolaRiS
@@ -1934,6 +2066,7 @@ methods:
   venue: RSS '26
   section: twin_scene
   project: https://polaris-evals.github.io/
+  code: https://github.com/arhanjain/PolaRiS
   authors: Jain, Arhan and Zhang, Mingtong and Arora, Kanav and Chen, William and Torne, Marcel and Irshad, Muhammad Zubair and Zakharov, Sergey and Wang, Yue and Levine, Sergey and Finn, Chelsea and Ma, Wei-Chiu and Shah, Dhruv and Gupta, Abhishek and Pertsch, Karl
   in_paper: false
 - name: Picasso
@@ -1941,6 +2074,7 @@ methods:
   arxiv: '2602.08058'
   venue: RSS '26
   section: twin_scene
+  code: https://github.com/MIT-SPARK/Picasso
   authors: Yu, Xihang and Talak, Rajat and Shaikewitz, Lorenzo and Carlone, Luca
   in_paper: false
 - name: SoMA
@@ -1949,6 +2083,7 @@ methods:
   venue: ICML '26
   section: twin_physics
   project: https://city-super.github.io/SoMA/
+  code: https://github.com/Wrioste/SoMA
   authors: Huang, Mu and Wang, Hui and Ren, Kerui and Xu, Linning and Zhou, Yunsong and Yu, Mulin and Dai, Bo and Pang, Jiangmiao
   in_paper: false
 - name: FreeArtGS
@@ -1956,6 +2091,8 @@ methods:
   arxiv: '2603.22102'
   venue: CVPR '26
   section: twin_kinematic
+  project: https://freeartgs.github.io/
+  code: https://github.com/FreeArtGS/FreeArtGS
   authors: Dai, Hang and Fan, Hongwei and Zhang, Han and Wu, Duojin and Zhang, Jiyao and Dong, Hao
   in_paper: false
 - name: SimRecon
@@ -1964,6 +2101,7 @@ methods:
   venue: CVPR '26
   section: twin_scene
   project: https://xiac20.github.io/SimRecon/
+  code: https://github.com/xiac20/SimRecon
   authors: Xia, Chong and Zhu, Kai and Wang, Zizhuo and Liu, Fangfu and Zhang, Zhizheng and Duan, Yueqi
   in_paper: false
 - name: FunRec
@@ -1979,6 +2117,8 @@ methods:
   arxiv: '2606.28276'
   venue: CoRL '26
   section: twin_scene
+  project: https://research.nvidia.com/labs/gear/simfoundry/
+  code: https://github.com/NVlabs/SimFoundry
   authors: Ranawaka, Nadun and Wong, Josiah and Pai, Wei-Lin and Chu, Wei-Teng and Dai, Tianyuan and Moghani, Masoud and Yin, Hang and Jiang, Yunfan and Durbano, Wesley and Huynh, Brandon and Fang, Yu and Xu, Danfei and Zhang, Ruohan and Fei-Fei, Li and Fan, Linxi and Wen, Bowen and Mandlekar, Ajay and Zhu, Yuke
   in_paper: false
 - name: EgoPhys
@@ -2002,6 +2142,7 @@ methods:
   venue: ECCV '26
   section: twin_scene
   project: https://OneVideoOneWorld.github.io/
+  code: https://github.com/yisuanwang/OVOW
   authors: Chen, Junhao and Zhang, Boran and Chen, Mingjin and Zhang, Henghaofan and Zhang, Saining and Zhu, Congcong and Zhao, Hao and Huang, Ruqi and Li, Zhihao and Wang, Yufei
   in_paper: false
 - name: PerceptTwin
@@ -2010,6 +2151,7 @@ methods:
   venue: ICRA '26
   section: twin_scene
   project: https://percept-twin.github.io/
+  code: https://github.com/Velythyl/PerceptTwin
   authors: Gauthier, Charlie and Morin, Sacha and Paull, Liam
   in_paper: false
 - name: Rest-State Articulation
@@ -2017,6 +2159,8 @@ methods:
   arxiv: '2607.27749'
   venue: ECCV '26
   section: articulated
+  project: https://da-eun07.github.io/rest2art/
+  code: https://github.com/da-eun07/rest2art
   authors: Lee, Daeun and Lee, Jaeah and Kim, Woosung and Jung, Haebeom and Park, Jaesik
   in_paper: false
 - name: RoboSnap
@@ -2025,6 +2169,7 @@ methods:
   venue: CoRL '26
   section: twin_scene
   project: https://robosnap.github.io
+  code: https://github.com/robosnap/robosnap
   authors: Zhang, Shujie and Yi, Jingkun and Zhong, Weipeng and Zhou, Zirui and Zhu, Yangkun and Wang, Hanqing and Xu, Xudong and Zhang, Weinan and Shen, Chunhua
   in_paper: false
 - name: CoDimRecon
@@ -2040,6 +2185,7 @@ methods:
   arxiv: '2609.37067'
   venue: arXiv '26
   section: twin_kinematic
+  project: https://l-avenir.github.io/fact-project-page/
   authors: Shao, Kuixiang and Nie, Chuansen and Bai, Yinuo and Gu, Jiayuan and Yu, Jingyi
   in_paper: false
 - name: Track-Articulate-Act
@@ -2047,6 +2193,8 @@ methods:
   arxiv: '2609.19119'
   venue: arXiv '26
   section: twin_kinematic
+  project: https://track-articulate-act.github.io/
+  code: https://github.com/brains-bots-n-behavior/track-articulate-act
   authors: Zhang, Jiaming and Bharadhwaj, Homanga
   in_paper: false
 - name: ORV
@@ -2078,6 +2226,8 @@ methods:
   arxiv: '2512.19402'
   venue: CVPR '26
   section: demo_sim
+  project: https://real2edit2real.github.io/
+  code: https://github.com/Real2Edit2Real/Real2Edit2Real
   authors: Zhao, Yujie and Fan, Hongwei and Chen, Di and Chen, Shengcong and Chen, Liliang and Li, Xiaoqi and Ren, Guanghui and Dong, Hao
   in_paper: false
 - name: GenSplat
@@ -2085,6 +2235,7 @@ methods:
   arxiv: '2603.29192'
   venue: ECCV '26
   section: augmentation
+  code: https://github.com/SanMumumu/GenSplat
   authors: Wang, Sen and Dong, Huaiyi and Tian, Jingyi and Li, Jiayi and Yang, Zhuo and Cao, Tongtong and Chen, Anlin and Wu, Shuang and Wang, Le and Zhou, Sanping
   in_paper: false
 - name: AffordGen
@@ -2092,6 +2243,8 @@ methods:
   arxiv: '2604.10579'
   venue: CVPR '26
   section: demo_sim
+  project: https://jiaweiz9.github.io/AffordGen-release/
+  code: https://github.com/jiaweiz9/AffordGen-release
   authors: Zhang, Jiawei and Hu, Kaizhe and Huang, Yingqian and Ju, Yuanchen and Xue, Zhengrong and Xu, Huazhe
   in_paper: false
 - name: Embody4D
@@ -2099,6 +2252,8 @@ methods:
   arxiv: '2605.01799'
   venue: arXiv '26
   section: augmentation
+  project: https://peiyantu.github.io/Embody4D/page.html
+  code: https://github.com/peiyantu/Embody4D
   authors: Tu, Peiyan and Zhu, Hanxin and Sun, Jingwen and Ren, Shaojie and Wang, Cong and Xu, Yuyan and Luo, Jiayi and Cheng, Xiaoqian and Chen, Zhibo
   in_paper: false
 - name: DeformGen
@@ -2106,6 +2261,8 @@ methods:
   arxiv: '2606.25939'
   venue: NeurIPS '26
   section: demo_sim
+  project: https://zili2002.github.io/DeformGen/
+  code: https://github.com/Zili2002/DeformGen
   authors: Lin, Zili and Zhang, Wenyao and Zhang, Yuyang and Qi, Zekun and Lin, Junyan and Zhu, Hanxin and Yang, Jiaolong and Chen, Zhibo and Mu, Yao and Yang, Xiaokang and Jin, Xin and Zeng, Wenjun
   in_paper: false
 - name: Pose6DAug
@@ -2113,6 +2270,7 @@ methods:
   arxiv: '2606.20118'
   venue: NeurIPS '26
   section: augmentation
+  project: https://jhoonjwa.github.io/pose6daug/
   authors: Lee, Jonghoon and Park, Seong Hyeon and Jeon, Byungwoo and Lee, Minha and Shin, Jinwoo
   in_paper: false
 - name: EnerVerse
@@ -2132,6 +2290,7 @@ methods:
   venue: IROS '25
   section: augmentation
   project: https://yuffish.github.io/rebot/
+  code: https://github.com/yuffish/rebot
   authors: Fang, Yu and Yang, Yue and Zhu, Xinghao and Zheng, Kaiyuan and Bertasius, Gedas and Szafir, Daniel and Ding, Mingyu
   in_paper: false
 - name: ManiTaskGen
@@ -2140,6 +2299,7 @@ methods:
   venue: NeurIPS '26
   section: demo_sim
   project: https://manitaskgen.github.io/
+  code: https://github.com/bbbbbMatrix/ManiTaskGen
   authors: Dai, Liu and Wang, Haina and Wan, Weikang and Su, Hao
   in_paper: false
 - name: CP-Gen
@@ -2148,6 +2308,7 @@ methods:
   venue: CoRL '25
   section: demo_sim
   project: https://cp-gen.github.io
+  code: https://github.com/kevin-thankyou-lin/cpgen
   authors: Lin, Kevin and Ragunath, Varun and McAlinden, Andrew and Prasad, Aaditya and Wu, Jimmy and Zhu, Yuke and Bohg, Jeannette
   in_paper: false
 - name: RoLA
@@ -2155,6 +2316,8 @@ methods:
   arxiv: '2509.22970'
   venue: CoRL '25
   section: demo_sim
+  project: https://sihengz02.github.io/RoLA/
+  code: https://github.com/sihengz02/RoLA
   authors: Zhao, Siheng and Mao, Jiageng and Chow, Wei and Shangguan, Zeyu and Shi, Tianheng and Xue, Rong and Zheng, Yuxi and Weng, Yijia and You, Yang and Seita, Daniel and Guibas, Leonidas and Zakharov, Sergey and Guizilini, Vitor and Wang, Yue
   in_paper: false
 - name: Ctrl-World
@@ -2163,6 +2326,7 @@ methods:
   venue: ICLR '26
   section: demo_wm
   project: https://ctrl-world.github.io/
+  code: https://github.com/Robert-gyj/Ctrl-World
   authors: Guo, Yanjiang and Shi, Lucy Xiaoyang and Chen, Jianyu and Finn, Chelsea
   in_paper: false
 - name: R2RGen
@@ -2171,6 +2335,7 @@ methods:
   venue: RSS '26
   section: demo_sim
   project: https://r2rgen.github.io/
+  code: https://github.com/r2rgen/R2RGen
   authors: Xu, Xiuwei and Ma, Angyuan and Li, Hankun and Yu, Bingyao and Zhu, Zheng and Zhou, Jie and Lu, Jiwen
   in_paper: false
 - name: GigaWorld-0
@@ -2187,6 +2352,8 @@ methods:
   arxiv: '2511.16651'
   venue: CVPR '26
   section: demo_scale
+  project: https://internrobotics.github.io/interndata-a1.github.io/
+  code: https://github.com/InternRobotics/InternDataEngine
   authors: Tian, Yang and Yang, Yuyin and Xie, Yiman and Cai, Zetao and Shi, Xu and Gao, Ning and Liu, Hangxu and Jiang, Xuekun and Qiu, Zherui and Yuan, Feng and Li, Yaping and Wang, Ping and Cai, Junhao and Zeng, Jia and Dong, Hao and Pang, Jiangmiao
   in_paper: false
 - name: IGen
@@ -2194,6 +2361,8 @@ methods:
   arxiv: '2512.01773'
   venue: CVPR '26
   section: demo_sim
+  project: https://chenghaogu.github.io/IGen/
+  code: https://github.com/ChenghaoGu/IGen_Robot
   authors: Gu, Chenghao and Kang, Haolan and Lin, Junchao and Wang, Jinghe and Wu, Duo and Xie, Shuzhao and Huang, Fanding and Ge, Junchen and Gong, Ziyang and Li, Letian and Zheng, Hongying and Lv, Changwei and Wang, Zhi
   in_paper: false
 - name: BiDemoSyn
@@ -2202,6 +2371,7 @@ methods:
   venue: RSS '26
   section: demo_sim
   project: https://hnuzhy.github.io/projects/BiDemoSyn/
+  code: https://github.com/hnuzhy/BiRoMan
   authors: Zhou, Huayi and Jia, Kui
   in_paper: false
 - name: Interactive World Simulator
@@ -2210,6 +2380,7 @@ methods:
   venue: RSS '26
   section: demo_wm
   project: https://yixuanwang.me/interactive_world_sim
+  code: https://github.com/WangYixuan12/interactive_world_sim
   authors: Wang, Yixuan and Syed, Rhythm and Wu, Fangyu and Zhang, Mengchao and Onol, Aykut and Barreiros, Jose and Nayyeri, Hooshang and Dear, Tony and Zhang, Huan and Li, Yunzhu
   in_paper: false
 - name: AffordSim
@@ -2225,6 +2396,7 @@ methods:
   venue: ECCV '26
   section: demo_sim
   project: https://internrobotics.github.io/sim1.github.io/
+  code: https://github.com/InternRobotics/SIM1
   authors: Zhou, Yunsong and Liu, Hangxu and Jiang, Xuekun and Shen, Xing and Zhou, Yuanzhen and Wang, Hui and Fang, Baole and Tian, Yang and Yu, Mulin and Yu, Qiaojun and Ma, Li and Li, Hengjie and Wang, Hanqing and Zeng, Jia and Pang, Jiangmiao
   in_paper: false
 - name: RoboDream
@@ -2233,6 +2405,7 @@ methods:
   venue: arXiv '26
   section: augmentation
   project: https://junjieye.com/RoboDream/
+  code: https://github.com/Jay-Ye/RoboDream
   authors: Ye, Junjie and Xue, Rong and Hoorick, Basile Van and Li, Runhao and Rajaprakash, Harshitha and Tokmakov, Pavel and Irshad, Muhammad Zubair and Guizilini, Vitor and Wang, Yue
   in_paper: false
 - name: Wh0
@@ -2240,6 +2413,8 @@ methods:
   arxiv: '2606.22136'
   venue: arXiv '26
   section: demo_wm
+  project: https://chenyt31.github.io/wh0.github.io/
+  code: https://github.com/chenyt31/Wh0
   authors: Chen, Yangtao and Chen, Zixuan and Wang, Peiyang and Li, Yong-Lu and Huo, Jing and Shi, Jieqi and Gao, Yang
   in_paper: false
 - name: WANDA
@@ -2255,6 +2430,7 @@ methods:
   arxiv: '2609.08339'
   venue: arXiv '26
   section: demo_scale
+  code: https://github.com/Tele-DLife/RoboCousin
   authors: Zhu, Jingxuan and Li, Jingyi and Chen, LiangLiang and Jing, Zhiyuan and Zhang, Jidong and Li, Hongming
   in_paper: false
 - name: IM-ENGINE
@@ -2269,6 +2445,7 @@ methods:
   arxiv: '2610.07652'
   venue: arXiv '26
   section: demo_scale
+  project: https://teamillusion-smart.github.io/
   authors: Ao, Jicong and Jiang, Shuhan and Zhong, Yuling and Liu, Yanwen and Gao, Yuhan and Zhao, Jiangyuan and Zhang, Yang and Zhu, Shiqiang and Bai, Chenjia and Li, Xuelong
   in_paper: false
 - name: X-Sim
@@ -2277,6 +2454,7 @@ methods:
   venue: CoRL '25
   section: demo_sim
   project: https://portal-cornell.github.io/X-Sim/
+  code: https://github.com/portal-cornell/X-Sim
   authors: Dan, Prithwish and Kedia, Kushal and Chao, Angela and Duan, Edward Weiyi and Pace, Maximus Adrian and Ma, Wei-Chiu and Choudhury, Sanjiban
   in_paper: false
 - name: RoboWheel
@@ -2284,6 +2462,8 @@ methods:
   arxiv: '2512.02729'
   venue: CVPR '26
   section: demo_sim
+  project: https://zhangyuhong01.github.io/Robowheel/
+  code: https://github.com/zhangyuhong01/Robowheel-Toolkits
   authors: Zhang, Yuhong and Gao, Zihan and Li, Shengpeng and Chen, Ling-Hao and Liu, Kaisheng and Cheng, Runqing and Lin, Xiao and Liu, Junjia and Li, Zhuoheng and Feng, Jingyi and He, Ziyan and Lin, Jintian and Huang, Zheyan and Liu, Zhifang and Wang, Haoqian
   in_paper: false
 - name: EgoEngine
@@ -2291,6 +2471,8 @@ methods:
   arxiv: '2606.12604'
   venue: CoRL '26
   section: demo_sim
+  project: https://egoengine.github.io/
+  code: https://github.com/GaTech-RL2/EgoEngine-CoRL2026
   authors: Liu, Yangcen and Cheng, Shuo and Yin, Xinchen and Shin, Woo Chul and Cueva, Alfred and Yang, Yiran and Chen, Zhenyang and Zhang, Chuye and Xu, Danfei
   in_paper: false
 - name: Video2Robo
@@ -2306,6 +2488,7 @@ methods:
   arxiv: '2608.02580'
   venue: CoRL '26
   section: demo_scale
+  project: https://www-ye.github.io/ego2robot_blog/
   authors: Wang, Ye and Lin, Pei and Chen, Xiong-Hui and Yuan, Haoqi and Liang, Zhixuan and Huang, Yiyang and Chen, Anzhe and Lei, Zixing and Zhang, Jie and Zhang, Tao and Li, Haoyang and Zhang, Tong and Xiao, Chenxi and Jiao, Ziyuan and Jin, Qin
   in_paper: false
 - name: SimReady Foundation
@@ -2314,6 +2497,8 @@ methods:
   date: 2026-03
   venue: Release '26
   section: tools
+  project: https://nvidia.github.io/simready-foundation/latest/
+  code: https://github.com/NVIDIA/simready-foundation
   in_paper: false
 datasets:
 - name: ShapeNet
@@ -2993,6 +3178,7 @@ datasets:
   arxiv: '2506.04941'
   venue: ICLR '26
   section: object_datasets
+  website: https://x-humanoid-artvip.github.io/
   details: Articulated digital twins + indoor scenes
   authors: Jin, Zhao and Che, Zhengping and Li, Tao and Zhao, Zhen and Wu, Kun and Zhang, Yuheng and Zhao, Yinuo and Liu, Zehui and Zhang, Qiang and Ju, Xiaozhu and Tian, Jing and Xue, Yousong and Tang, Jian
   in_paper: false
@@ -3009,6 +3195,7 @@ datasets:
   arxiv: '2604.23018'
   venue: NeurIPS '26
   section: object_datasets
+  website: https://huggingface.co/datasets/ZeroOneCreative/amara-spatial-10k
   details: 10K+ metric-scaled assets with collision hulls
   authors: Salehi, Mohammad Sadegh and Perkins, Alex and Maurell, Igor and Dabbagh, Ashkan and Wong, Raymond
   in_paper: false
@@ -3025,6 +3212,7 @@ datasets:
   arxiv: '2605.24403'
   venue: CVPR '26
   section: object_datasets
+  website: https://3dlg-hcvc.github.io/artiverse/
   details: 5.4K articulated objects / 88 cat.
   authors: Iliash, Denys and Liu, Jiayi and Fokin, Egor and Wu, Qirui and Mahdavi-Amiri, Ali and Savva, Manolis and Chang, Angel X.
   in_paper: false
@@ -3041,6 +3229,7 @@ datasets:
   arxiv: '2607.05390'
   venue: ECCV '26
   section: object_datasets
+  website: https://deform360.lhy.xyz/
   details: 198 objects · 1,980 sequences · 215 h visuotactile
   authors: Li, Hongyu and Fu, Wanjia and Cong, Xiaoyan and Li, Zekun and Huang, Binghao and Jiang, Hanxiao and He, Xintong and Liang, Yiqing and Fu, Rao and Lu, Tao and Sridhar, Srinath and Smith, Kevin A. and Konidaris, George and Li, Yunzhu
   in_paper: false
@@ -3102,6 +3291,7 @@ datasets:
   arxiv: '2610.01744'
   venue: arXiv '26
   section: demo_datasets
+  website: https://huggingface.co/datasets/wonguen/3DROID
   details: Metric 3DGS reconstructions for DROID episodes
   authors: Cho, Wonguen and Lee, Junhoo and Kwak, Nojun
   in_paper: false
@@ -3116,6 +3306,7 @@ datasets:
   arxiv: '2505.11032'
   venue: NeurIPS '25
   section: benchmarks
+  website: https://wayrise.github.io/DexGarmentLab/
   details: 15 garment task scenarios · dexterous bimanual
   authors: Wang, Yuran and Wu, Ruihai and Chen, Yue and Wang, Jiarui and Liang, Jiaqi and Zhu, Ziyu and Geng, Haoran and Malik, Jitendra and Abbeel, Pieter and Dong, Hao
   in_paper: false
@@ -3130,6 +3321,7 @@ datasets:
   arxiv: '2602.11337'
   venue: arXiv '26
   section: scene_datasets
+  website: https://molmospaces.allen.ai/
   details: 230K+ environments · 130K assets · 42M grasps
   authors: Kim, Yejin and Pumacay, Wilbert and Rayyan, Omar and Argus, Max and Han, Winson and VanderBilt, Eli and Salvador, Jordi and Deshpande, Abhay and Hendrix, Rose and Jauhri, Snehal and Liu, Shuo and Shafiullah, Nur Muhammad Mahi and Guru, Maya and Eftekhar, Ainaz and Farley, Karen and Clay, Donovan and Duan, Jiafei and Guru, Arjun and Wolters, Piper and Herrasti, Alvaro and Lee, Ying-Chun and Chalvatzaki, Georgia and Cui, Yuchen and Farhadi, Ali and Fox, Dieter and Krishna, Ranjay
   in_paper: false
@@ -3186,6 +3378,7 @@ datasets:
   arxiv: '2608.05948'
   venue: arXiv '26
   section: evaluation
+  website: https://internrobotics.github.io/GAUGE/
   details: 22 task families · real-world grounded
   authors: Wang, Shuai and Feng, Yaxin and Jiang, Xuekun and Tian, Shihan and Yan, Ningyu and Shen, Xing and Lyu, Chaoyang and Wang, Hui and Zhou, Yunsong and Wang, Hanqing and Pang, Jiangmiao and Xiang, Yang and Gao, Xing and Shen, Chunhua and Zhang, Weinan
   in_paper: false
@@ -3213,6 +3406,7 @@ datasets:
   arxiv: '2607.13059'
   venue: IROS '26
   section: evaluation
+  website: https://github.com/zhanghuzhenyu/gpu_sim_bench
   details: Scalability, physical consistency, determinism
   authors: Zhang, Huzhenyu and Yuan, Shenghai and Yan, Wenrui and Ma, Li and Li, Hengjie and Pang, Jingcheng and Yudin, Dmitry
   in_paper: false
@@ -3258,7 +3452,7 @@ platforms:
 - name: OmniGibson
   type: Embodied simulation platform
   strengths: Rich object semantics and interactive scene modeling
-  website: https://behavior.stanford.edu/omnigibson/
+  website: https://behavior.stanford.edu/omnigibson/overview.html
   updates:
   - name: BEHAVIOR Challenge 2025
     url: https://behavior.stanford.edu/challenge/archive/2025/index.html
