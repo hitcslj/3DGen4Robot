@@ -6,6 +6,8 @@
 Each table lives between a pair of markers in README.md, e.g.
     <!-- BEGIN papers:articulated -->  ...  <!-- END papers:articulated -->
 Only the text between markers is replaced; everything else in the README is hand-written.
+Each generated table is wrapped in an open <details> block whose summary gives the entry count,
+so readers can fold it.
 Requires PyYAML (pip install pyyaml).
 """
 import pathlib
@@ -20,9 +22,12 @@ README_PATH = ROOT / "README.md"
 
 ARXIV_RE = re.compile(r"^\d{4}\.\d{4,5}$")
 VENUE_RE = re.compile(r".+ '\d\d\)?$")
-DATASET_SECTIONS = {"object_datasets", "scene_datasets", "demo_datasets", "benchmarks"}
+DATASET_SECTIONS = {"object_datasets", "scene_datasets", "demo_datasets", "benchmarks", "evaluation"}
 DATASET_HEADER = {"object_datasets": "Dataset", "scene_datasets": "Dataset", "demo_datasets": "Dataset",
-                  "benchmarks": "Benchmark"}
+                  "benchmarks": "Benchmark", "evaluation": "Benchmark / Metric"}
+DATASET_NOUN = {"object_datasets": "dataset", "scene_datasets": "dataset", "demo_datasets": "dataset",
+                "benchmarks": "benchmark", "evaluation": "entry"}
+NEW_MARK = " 🆕"  # additions first released in or after `new_since` (see is_new)
 
 
 def load():
@@ -31,6 +36,8 @@ def load():
 
 def validate(db):
     errors = []
+    if not re.match(r"^\d{4}-\d\d$", str(db.get("new_since", ""))):
+        errors.append("new_since: give the first release month after the survey as YYYY-MM")
     keys = {t["key"] for t in db["taxonomy"]}
     seen = set()
     for kind in ("methods", "datasets"):
@@ -54,10 +61,23 @@ def validate(db):
             for field in ("paper_url", "project", "code", "website"):
                 if e.get(field) and not str(e[field]).startswith(("http://", "https://")):
                     errors.append(f"{where}: '{field}' is not a URL")
+            for rel in e.get("related", []):
+                if not rel.get("name") or not (rel.get("arxiv") or rel.get("url")):
+                    errors.append(f"{where}: each 'related' item needs a name and an arxiv id or url")
             ident = (e.get("section"), e.get("arxiv") or e.get("name"))
             if ident in seen:
                 errors.append(f"{where}: duplicate entry in section '{e.get('section')}'")
             seen.add(ident)
+    for i, p in enumerate(db.get("platforms", [])):
+        where = f"platforms[{i}] {p.get('name', '?')}"
+        for field in ("name", "type", "strengths", "website"):
+            if not p.get(field):
+                errors.append(f"{where}: missing '{field}'")
+        if p.get("in_paper") is False and not re.match(r"^\d{4}-\d\d$", str(p.get("date", ""))):
+            errors.append(f"{where}: a platform added after the survey needs 'date' as YYYY-MM")
+        for u in p.get("updates", []):
+            if not u.get("name") or not str(u.get("url", "")).startswith(("http://", "https://")):
+                errors.append(f"{where}: each 'updates' item needs a name and a url")
     return errors
 
 
@@ -69,6 +89,11 @@ def sort_key(e):
     return (date if len(date) > 4 else date + "-12", 0)
 
 
+def is_new(e, since):
+    # added after the survey and first released after its April 2026 version
+    return e.get("in_paper") is False and sort_key(e)[0] >= since
+
+
 def paper_cell(e):
     title = e["title"].replace("|", "\\|")
     if e.get("arxiv"):
@@ -76,7 +101,19 @@ def paper_cell(e):
         badge = f"[![arXiv](https://img.shields.io/badge/arXiv-{a}-b31b1b.svg)](https://arxiv.org/abs/{a})"
     else:
         badge = f"[![Paper](https://img.shields.io/badge/Paper-PDF-blue)]({e['paper_url']})"
-    return f"{badge} <br> {title}"
+    cell = f"{badge} <br> {title}"
+    if e.get("related"):
+        links = ", ".join(f"[{r['name']}]({rel_url(r)})" for r in e["related"])
+        cell += f" <br> ↳ also: {links}"
+    return cell
+
+
+def rel_url(r):
+    return f"https://arxiv.org/abs/{r['arxiv']}" if r.get("arxiv") else r["url"]
+
+
+def name_cell(e, since):
+    return f"`{e['name']}`" + (NEW_MARK if is_new(e, since) else "")
 
 
 def project_cell(url):
@@ -98,22 +135,37 @@ def table(header, rows):
     return "\n".join([line(header), line(["-" * w for w in widths])] + [line(r) for r in rows])
 
 
+def collapsible(body, entries, noun, since):
+    n, n_new = len(entries), sum(is_new(e, since) for e in entries)
+    label = f"{n} {noun}" if n == 1 else f"{n} {noun[:-1] + 'ies' if noun.endswith('y') else noun + 's'}"
+    if n_new:
+        label += f" ({n_new}{NEW_MARK})"
+    return f"<details open>\n<summary>{label}</summary>\n\n{body}\n\n</details>"
+
+
 def render_section(db, key):
+    since = db["new_since"]
     if key in DATASET_SECTIONS:
         entries = sorted((e for e in db["datasets"] if e["section"] == key), key=sort_key)
-        rows = [[f"`{e['name']}`", paper_cell(e), e["venue"], e.get("details", "-"), project_cell(e.get("website"))]
+        rows = [[name_cell(e, since), paper_cell(e), e["venue"], e.get("details", "-"), project_cell(e.get("website"))]
                 for e in entries]
-        return table([DATASET_HEADER[key], "Paper", "Venue", "Details", "Website"], rows)
+        body = table([DATASET_HEADER[key], "Paper", "Venue", "Details", "Website"], rows)
+        return collapsible(body, entries, DATASET_NOUN[key], since)
     entries = sorted((e for e in db["methods"] if e["section"] == key), key=sort_key)
-    rows = [[f"`{e['name']}`", paper_cell(e), e["venue"], project_cell(e.get("project")), code_cell(e.get("code"))]
+    rows = [[name_cell(e, since), paper_cell(e), e["venue"], project_cell(e.get("project")), code_cell(e.get("code"))]
             for e in entries]
-    return table(["Model", "Paper", "Venue", "Website", "GitHub"], rows)
+    body = table(["Model", "Paper", "Venue", "Website", "GitHub"], rows)
+    return collapsible(body, entries, "paper", since)
 
 
 def render_platforms(db):
-    rows = [[p["name"], p["type"], p["strengths"], f"[![Website](https://img.shields.io/badge/Website-blue)]({p['website']})"]
-            for p in db.get("platforms", [])]
-    return table(["Platform", "Type", "Strengths", "Link"], rows)
+    since, rows = db["new_since"], []
+    for p in db.get("platforms", []):
+        updates = ", ".join(f"[{u['name']}]({u['url']})" for u in p.get("updates", [])) or "-"
+        rows.append([p["name"] + (NEW_MARK if is_new(p, since) else ""), p["type"], p["strengths"], updates,
+                     f"[![Website](https://img.shields.io/badge/Website-blue)]({p['website']})"])
+    body = table(["Platform", "Type", "Strengths", "Recent Updates", "Link"], rows)
+    return collapsible(body, db.get("platforms", []), "platform", since)
 
 
 def main():
