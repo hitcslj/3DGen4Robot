@@ -2163,6 +2163,14 @@ methods:
   code: https://github.com/da-eun07/rest2art
   authors: Lee, Daeun and Lee, Jaeah and Kim, Woosung and Jung, Haebeom and Park, Jaesik
   in_paper: false
+- name: Sketch2Arti
+  title: 'Sketch2Arti: Sketch-based Articulation Modeling of CAD Objects'
+  arxiv: '2604.25781'
+  venue: SIGGRAPH '26
+  section: articulated
+  project: https://arlo-yang.github.io/Sketch2Arti/
+  authors: Yang, Yi and Pan, Hao and Cui, Yijing and Sheffer, Alla and Li, Changjian
+  in_paper: false
 - name: RoboSnap
   title: 'RoboSnap: One-Shot Real-to-Sim Scene Generation for Generalizable Robot Learning and Evaluation'
   arxiv: '2607.06699'
